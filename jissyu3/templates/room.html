@@ -10,11 +10,12 @@
 </head>
 <body>
     <h1>待機画面</h1>
-    <h2 id="roomname">部屋名:<span>{{room_name}}<span></h2>
+    <h2 id="roomname" name="roomname">部屋名:<span>{{room_name}}</span></h2>
     <h2>現在の人数<span id="userNum">1</span>名</h2>
 
-    <button>開始</button>
+    <button id="start">開始</button>
 
-    <script src="{% static 'js/room.js' %}"></script>
+    <!-- <script src="{% static 'js/room.js' %}"></script> -->
+    <script src="{% static 'js/room2.js' %}"></script>
 </body>
 </html>
