@@ -13,6 +13,7 @@
     <ul id = "roomname_result">
     {% for rooms in WaitingRooms_result %}
         <h3>{{rooms.roomName}}</h3>
+        <button class="permit" data-roomName={{rooms.roomName}}>許可</button>
         <br>
     {% endfor %}
     </ul>
