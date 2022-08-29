@@ -16,6 +16,7 @@ def room(request, room_name):
         roomName = request.POST["roomname"]
         result = WaitingRooms(roomName = roomName)
         result.save()
+        return JsonResponse({"res": "SUCCESS"})
 
     return render(request, "room.html", {"room_name": room_name})
 
@@ -61,4 +62,10 @@ def login(request):
         if not "logined" in request.session:
             return render(request, "login.html")
         else:
-            return redirect("roomadmin")                      
+            return redirect("roomadmin")     
+
+def game(request, room_name):
+    return render(request, "game.html", {"roomName": room_name})
+
+def gameadmin(request, room_name):
+    return render(request, "game.html", {"room_Name": room_name, "isAdmin": True})
