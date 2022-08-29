@@ -4,3 +4,6 @@ from django.db import models
 class WaitngUsers(models.Model):
     roomName = models.CharField(max_length=50, primary_key=True)
     userNum = models.IntegerField(default=1)
+
+class WaitingRooms(models.Model):
+    roomName = models.CharField(max_length=50 ,primary_key=True)

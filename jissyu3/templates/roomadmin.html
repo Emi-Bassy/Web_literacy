@@ -1,11 +1,21 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <title>Login_gamemaster</title>
-    </head>
-    <body>
-        <h1>管理者画面</h1>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Login_gamemaster</title>
+    <script src="{% static 'lib/jquery-3.6.0.min.js' %}"></script>
+</head>
+<body>
+    <h1>管理者画面</h1>
+    <h2>待機グループ一覧</h2>
+    <input type="text" name="roomname_search" id="search_roomname">
+    <ul id = "roomname_result">
+    {% for rooms in WaitingRooms_result %}
+        <h3>{{rooms.roomName}}</h3>
+        <br>
+    {% endfor %}
+    </ul>
+    <script src="{% static 'js/room_admin.js' %}"></script>
+</body>
 </html>
