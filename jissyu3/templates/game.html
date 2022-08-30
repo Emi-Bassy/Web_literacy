@@ -1,39 +1,65 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{% static 'lib/jquery-3.6.0.min.js' %}"></script>
     <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/game.css' %}">
 </head>
 <body>
     <h1>ゲーム画面</h1>
-    <h2>部屋名:{{room_name}}</h2>
+    <p>今は仮で赤色がユーザ、青色が管理者のアイコンになってます。</p>
+    <p>また管理者のゲーム画面にある!ボタンは次の章へ進むことを全ユーザに許可するボタンです。</p>
+    <div class="chat-content">
+        <h2><span id="roomName">{{room_name}}</span>:<span id="chapterNum"></span></h2>
+        {% if isAdmin %}
+            <button id="nextOk-btn">！</button>
+        {% endif %}
+        <!-- チャットの一覧↓ -->
+        <ul class="chat">
+
+        </ul>
+        <input type="text" id="chat-text">
+        <button id="chat-btn">送信</button>
+    </div>
 
     <div class="scene-content">
         <!-- 背景画像↓ -->
         <img src="" id="background-img">
+
         <div class="speech">
             <!-- キャラクター名↓ -->
             <div class="character-name">
-                abcd
+                
             </div>
 
             <!-- セリフ -->
             <div class="words">
-                TESTTESTTEST
+
             </div>
+            <button id="next-chapter">次の章へ進む</button>
 
             <!-- 次のセリフへ進むボタン -->
             <button id="next-btn">次へ</button>
         </div>
     </div>
 
+    <!-- ばっしーへ、セリフのログはここに書いてほしい -->
+    <div class="log">
+        <ul class="chat-log">
+
+        </ul>
+    </div>
+
+    <script src="{% static 'js/game.js' %}"></script>
     <!-- 管理者とユーザで別々のJSを使う -->
     {% if isAdmin %}
-        <script src="game_admin.js"></script>
+        <script src="{% static 'js/game_admin.js' %}"></script>
     {% else %}
-        <script src="game_user.js"></script>
+        <script src="{% static 'js/game_user.js' %}"></script>
     {% endif %}
 </body>
 </html>
