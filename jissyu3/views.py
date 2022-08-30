@@ -65,7 +65,7 @@ def login(request):
             return redirect("roomadmin")     
 
 def game(request, room_name):
-    return render(request, "game.html", {"roomName": room_name})
+    return render(request, "game.html", {"room_name": room_name})
 
 def gameadmin(request, room_name):
-    return render(request, "game.html", {"room_Name": room_name, "isAdmin": True})
+    return render(request, "game.html", {"room_name": room_name, "isAdmin": True})
