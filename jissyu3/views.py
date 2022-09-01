@@ -2,12 +2,19 @@ from email import contentmanager
 from multiprocessing import context
 import re
 from django.shortcuts import render, redirect
-from jissyu3.models import WaitingRooms
+from jissyu3.models import WaitingRooms, PlayingRooms
 from django.http import HttpResponse,JsonResponse
 from django.views.decorators.csrf import csrf_exempt
+from django.utils import timezone
 
 # Create your views here.
 def index(request):
+    #一定時間経ったゲーム部屋を消す
+    playRoomAll = PlayingRooms.objects.all()
+    for room in playRoomAll:
+        if (timezone.now() - room.createTime).seconds >= 3600:
+            room.delete()
+
     return render(request, "index.html")
 
 @csrf_exempt
@@ -65,7 +72,15 @@ def login(request):
             return redirect("roomadmin")     
 
 def game(request, room_name):
+    try:
+        PlayingRooms.objects.get(roomName = room_name)
+    except:
+        return redirect("index")
     return render(request, "game.html", {"room_name": room_name})
 
 def gameadmin(request, room_name):
+    try:
+        PlayingRooms.objects.get(roomName = room_name)
+    except:
+        return redirect("index")
     return render(request, "game.html", {"room_name": room_name, "isAdmin": True})
