@@ -25,13 +25,18 @@ function wordShow(){
         $(".character-name").text(word);
         $(".words").text(word_info[word]);
 
-        /*ばっしーへ、上のwordがキャラ名、word_info[word]がキャラのセリフになってます。
+        /*ばっしーへ、上のwordが現在のキャラ名、word_info[word]がそのキャラのセリフになってます。
         *セリフをログに追加するプログラムはこの辺に作った方がやりやすいかも？
         */
 
         if(word == "SYSTEM" && isNextChapterOk){
             $("#next-chapter").css({"display": "block"});
         }
+
+        if(word == "SYSTEM"){
+            $("#next-btn").prop("disabled", true);
+        }
+        
         break;
     }
 
@@ -82,12 +87,5 @@ $(document).on("click", "#next-btn", function(){
     wordShow();
 });
 
-//次のチャプターへ進むボタンを押したとき
-$(document).on("click", "#next-chapter", function(){
-    $("#next-chapter").css({"display": "none"});
 
-    wordsNum = -1;
-    chapter++;
-    isNextChapterOk = false;
-    wordShow();
-});
+

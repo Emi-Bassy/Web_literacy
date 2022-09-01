@@ -1,7 +1,7 @@
 from asgiref.sync import async_to_sync
 from channels.generic.websocket import WebsocketConsumer
 import json
-from jissyu3.models import WaitingRooms, WaitngUsers
+from jissyu3.models import WaitingRooms, WaitngUsers, PlayingRooms
 from jissyu3.views import roomname
 
 class MatchingConsumer(WebsocketConsumer):
@@ -77,6 +77,9 @@ class RedirectConsumer(WebsocketConsumer):
         if data["type"] == "adminPermit":
             theRoom = WaitingRooms.objects.get(roomName = data["roomName"])
             theRoom.delete()
+
+            #リダイレクト許可用
+            PlayingRooms(roomName=data["roomName"]).save()
 
         async_to_sync(self.channel_layer.group_send)(
             self.room_group_name,
