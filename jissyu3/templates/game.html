@@ -8,22 +8,41 @@
     <script src="{% static 'lib/jquery-3.6.0.min.js' %}"></script>
     <title>Document</title>
     <link rel="stylesheet" href="{% static 'css/game.css' %}">
+    {% if isAdmin %}
+    <!-- 安川さんへ、管理者用のCSSを作るなら下記のCSSファイルに記述してください -->
+        <link rel="stylesheet" href="{% static 'css/game_admin.css' %}">
+    {% endif %}
 </head>
 <body>
     <h1>ゲーム画面</h1>
+    {% if isAdmin %}
+        <h2>管理人モード</h2>
+    {% endif %}
     <p>今は仮で赤色がユーザ、青色が管理者のアイコンになってます。</p>
     <p>また管理者のゲーム画面にある!ボタンは次の章へ進むことを全ユーザに許可するボタンです。</p>
     <div class="chat-content">
         <h2><span id="roomName">{{room_name}}</span>:<span id="chapterNum"></span></h2>
         {% if isAdmin %}
-            <button id="nextOk-btn">！</button>
+            <button id="nextOk-btn" data-now="chat">！</button>
         {% endif %}
         <!-- チャットの一覧↓ -->
-        <ul class="chat">
+        <div class="chat-content-inner">
+            <div class="chat-side">
+                <ul class="chat">
 
-        </ul>
-        <input type="text" id="chat-text">
-        <button id="chat-btn">送信</button>
+                </ul>
+                <input type="text" id="chat-text">
+                <button id="chat-btn">送信</button>
+            </div>
+            {% if isAdmin %}
+                <div class="confirm-side">
+                    <p>次の章へ進むのを許可しますか？</p>
+                    <button id="next-chapter-ok">OK</button>
+                    <button id="next-chapter-no">NO</button>
+                </div>
+            {% endif %}
+        </div>
+
     </div>
 
     <div class="scene-content">
@@ -40,10 +59,13 @@
             <div class="words">
 
             </div>
-            <button id="next-chapter">次の章へ進む</button>
+            <button id="next-chapter">YES</button>
 
             <!-- 次のセリフへ進むボタン -->
             <button id="next-btn">次へ</button>
+
+            <!-- ログを表示するボタン -->
+            <button id="log-btn">Log</button>
         </div>
     </div>
 
@@ -52,6 +74,10 @@
         <ul class="chat-log">
 
         </ul>
+    </div>
+
+    <div class="exit">
+        <button id="exit-btn">ゲーム終了</button>
     </div>
 
     <script src="{% static 'js/game.js' %}"></script>

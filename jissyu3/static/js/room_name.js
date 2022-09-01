@@ -9,7 +9,7 @@ $(window).on("load", function(){
         let data = JSON.parse(e.data).res
         if(data.type == "userRequest"){
             $("#start").prop("disabled", true);
-            $("#start").text("管理者待ちです...")
+            $("#start").text("管理者を待っています")
         }
         else if(data.type == "adminPermit"){
             window.location = `${window.location.origin}/game/${$("#roomname span").text()}`
