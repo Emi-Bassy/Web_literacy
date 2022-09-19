@@ -29,6 +29,8 @@ function wordShow(){
         *セリフをログに追加するプログラムはこの辺に作った方がやりやすいかも？
         */
 
+        $(".chat-log").append(`<li><span class="chara-log">${word}:</span><span class="words-log">${word_info[word]}</span></li>`)
+
         if(word == "SYSTEM" && isNextChapterOk){
             $("#next-chapter").css({"display": "block"});
         }
@@ -49,7 +51,7 @@ function wordShow(){
 
 $(window).on("load", function(){
     $.ajax({
-        url: window.location.origin + "/static/words-test.json",
+        url: window.location.origin + "/static/words.json",
         type: "GET",
         dataType: "json",
         success: function(data){
@@ -73,7 +75,7 @@ $(window).on("load", function(){
             }
         }
         else{
-            const InsertHtml = `<li><img src="${data.user == "admin" ? "/static/picture/admin_icon.png" : "/static/picture/user_icon.png"}" width="20" height="20">
+            const InsertHtml = `<li><img src="${data.user == "admin" ? "/static/picture/admin_icon.png" : "/static/picture/user_icon.png"}" width="40" height="40">
             <p>${data.text}</p>
             </li>`
 
@@ -88,4 +90,20 @@ $(document).on("click", "#next-btn", function(){
 });
 
 
+$(document).on("click", ".arrow-btn", function(){
+    $(this).parent().toggleClass("active");
+});
 
+$(document).on("click", "#log-btn", function(){
+    $(".log").css({display: "block"});
+});
+
+$(document).on("click", ".log", function(){
+    $(".log").css({display: "none"});
+});
+
+$("#chat-text").keyup(function(e){
+    if(e.which == 13){
+        $("#chat-btn").click();
+    }
+});
