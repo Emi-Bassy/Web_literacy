@@ -8,13 +8,13 @@ $(document).on("click", "#nextOk-btn", function(){
         $(".chat-side").css({"display": "none"});
         $(".confirm-side").css({"display": "block"});
         $(this).attr("data-now", "confirm");
-        $(this).text("×");
+        $(this).find("p").text("×");
     }
     else{
         $(".confirm-side").css({"display": "none"});
         $(".chat-side").css({"display": "block"});
         $(this).attr("data-now", "chat");
-        $(this).text("！");
+        $(this).find("p").text("!");
     }
 });
 
@@ -24,14 +24,14 @@ $(document).on("click", "#next-chapter-ok", function(){
     $(".confirm-side").css({"display": "none"});
     $(".chat-side").css({"display": "block"});
     $("#nextOk-btn").attr("data-now", "chat");
-    $("#nextOk-btn").text("！");
+    $("#nextOk-btn").find("p").text("×");
 });
 
 $(document).on("click", "#next-chapter-no", function(){
     $(".confirm-side").css({"display": "none"});
     $(".chat-side").css({"display": "block"});
     $("#nextOk-btn").attr("data-now", "chat");
-    $("#nextOk-btn").text("！");
+    $("#nextOk-btn").find("p").text("!");
 });
 
 //次のチャプターへ進むボタンを押したとき
