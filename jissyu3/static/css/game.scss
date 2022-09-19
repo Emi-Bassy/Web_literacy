@@ -6,6 +6,7 @@ $mygreen: rgb(81, 103, 20);
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: vdl-gigamaru, sans-serif;
 }
 
 button{
@@ -38,6 +39,8 @@ button{
         #background-img{
             position: fixed;
             width: 100vw;
+            height: 100vh;
+            object-fit: cover;
             top: 0;
             left: 0;
             z-index: -1;
@@ -119,7 +122,10 @@ button{
             left: 1%;
 
             .character-name{
-                padding: 0.4rem;
+                position: absolute;
+                padding: 0.2rem;
+                top: -10%;
+                left: 0.3rem;
             }
         }
 
@@ -235,7 +241,7 @@ button{
                 border: none;
                 border-radius: 20px;
                 outline: none;
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 padding-left: 1rem;
                 
                 &::placeholder{
@@ -310,7 +316,7 @@ button{
                     p{
                         position: absolute;
                         left: 50%;
-                        transform: translate(-50%, -15%);
+                        transform: translate(-50%, -35%);
                     }
 
                     &:hover{
@@ -323,7 +329,7 @@ button{
                     p{
                         position: absolute;
                         left: 50%;
-                        transform: translate(-50%, -15%);
+                        transform: translate(-50%, -35%);
                     }
                     &:hover{
                         background-color: rgb(190, 53, 43);
@@ -358,6 +364,8 @@ button{
 
             li{
                 position: relative;
+                overflow: visible;
+
                 img, p{
                     display: inline-block;
                 }
@@ -365,6 +373,8 @@ button{
                 p{
                     font-size: 2rem;
                     margin-left: 2rem;
+                    width: 80%;
+                    word-break: break-all;
                 }
 
                 img{
@@ -374,7 +384,7 @@ button{
                 &::after{
                     content: "";
                     position: absolute;
-                    height: 3px;
+                    height: 1.5px;
                     width: 80%;
                     right: 10%;
                     bottom: -2%;
@@ -388,7 +398,7 @@ button{
     }
 
     h2{
-        font-size: 2.2rem;
+        font-size: 1.75rem;
         padding: 0.5rem;
         display: inline-block;
     }
@@ -443,7 +453,7 @@ button{
 }
 
 .log{
-    display: none;
+    visibility: hidden;
     position: fixed;
     z-index: 1000;
     width: 100vw;
@@ -481,5 +491,5 @@ h1{
     color: red;
     margin-top: 1.5rem;
     margin-left: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }

@@ -21,8 +21,11 @@ def index(request):
 def room(request, room_name):
     if request.method == "POST":
         roomName = request.POST["roomname"]
-        result = WaitingRooms(roomName = roomName)
-        result.save()
+        try:
+            result = WaitingRooms(roomName = roomName)
+            result.save()
+        except:
+            pass
         return JsonResponse({"res": "SUCCESS"})
 
     return render(request, "room.html", {"room_name": room_name})

@@ -31,6 +31,10 @@ function wordShow(){
 
         $(".chat-log").append(`<li><span class="chara-log">${word}:</span><span class="words-log">${word_info[word]}</span></li>`)
 
+        const chatLog = document.querySelector(".chat-log");
+        chatLog.scrollTo(0, chatLog.scrollHeight);
+        console.log(chatLog.scrollHeight);
+
         if(word == "SYSTEM" && isNextChapterOk){
             $("#next-chapter").css({"display": "block"});
         }
@@ -80,6 +84,9 @@ $(window).on("load", function(){
             </li>`
 
             $(".chat").append(InsertHtml);
+
+            const chat = document.getElementsByClassName("chat")[0];
+            chat.scrollTo(0, chat.scrollHeight);
         }
     }
 });
@@ -95,11 +102,11 @@ $(document).on("click", ".arrow-btn", function(){
 });
 
 $(document).on("click", "#log-btn", function(){
-    $(".log").css({display: "block"});
+    $(".log").css({visibility: "visible"});
 });
 
 $(document).on("click", ".log", function(){
-    $(".log").css({display: "none"});
+    $(".log").css({visibility: "hidden"});
 });
 
 $("#chat-text").keyup(function(e){

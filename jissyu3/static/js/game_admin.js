@@ -24,7 +24,7 @@ $(document).on("click", "#next-chapter-ok", function(){
     $(".confirm-side").css({"display": "none"});
     $(".chat-side").css({"display": "block"});
     $("#nextOk-btn").attr("data-now", "chat");
-    $("#nextOk-btn").find("p").text("×");
+    $("#nextOk-btn").find("p").text("!");
 });
 
 $(document).on("click", "#next-chapter-no", function(){

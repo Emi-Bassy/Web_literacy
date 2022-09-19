@@ -6,14 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="{% static 'lib/jquery-3.6.0.min.js' %}"></script>
-    <title>Document</title>
+    <title>待機部屋</title>
+    <link rel="stylesheet" href="{% static 'css/room.css' %}">
+    <link rel="shortcut icon" href="{% static 'picture/RIST.png' %}" type="image/x-icon">
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'oyc7mpt',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
 </head>
 <body>
-    <h1>待機画面</h1>
-    <h2 id="roomname">部屋名:<span>{{room_name}}<span></h2>
-    <h2>現在:<span id="userNum">1</span>名</h2>
+    <div class="top-bar">
+        <h1>中高生の情報連携教育・スタート待機</h1>    
+    </div>
+    
+    <h2 id="roomname">部屋名:  <span>{{room_name}}<span></h2>
+    <h2 id="nowinfo">現在:  <span id="userNum">1</span>名</h2>
 
-    <button id="start">開始</button>
+    <div class="start-wrapper">
+        <button id="start"><p>開始</p></button>
+        <img src="{% static 'picture/default-gray.svg' %}" id="loading-icon">
+    </div>
+    
 
     <script src="{% static 'js/room.js' %}"></script>
     <script src="{% static 'js/room_name.js' %}"></script>
