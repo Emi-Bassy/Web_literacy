@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
+  font-family: vdl-gigamaru, sans-serif;
 }
 
 button {
@@ -37,6 +38,9 @@ button {
 .scene-content .bg-img-wrapper #background-img {
   position: fixed;
   width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
   top: 0;
   left: 0;
   z-index: -1;
@@ -124,7 +128,10 @@ button {
 }
 
 .scene-content .speech .character-wrapper .character-name {
-  padding: 0.4rem;
+  position: absolute;
+  padding: 0.2rem;
+  top: -10%;
+  left: 0.3rem;
 }
 
 .scene-content .speech .outdesign {
@@ -248,7 +255,7 @@ button {
   border: none;
   border-radius: 20px;
   outline: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding-left: 1rem;
 }
 
@@ -365,8 +372,8 @@ button {
 .chat-content .chat-content-inner .confirm-side .admin-btns-wrapper #next-chapter-ok .btn-ok-no-inner p {
   position: absolute;
   left: 50%;
-  -webkit-transform: translate(-50%, -15%);
-          transform: translate(-50%, -15%);
+  -webkit-transform: translate(-50%, -35%);
+          transform: translate(-50%, -35%);
 }
 
 .chat-content .chat-content-inner .confirm-side .admin-btns-wrapper #next-chapter-ok .btn-ok-no-inner:hover {
@@ -382,8 +389,8 @@ button {
 .chat-content .chat-content-inner .confirm-side .admin-btns-wrapper #next-chapter-no .btn-ok-no-inner p {
   position: absolute;
   left: 50%;
-  -webkit-transform: translate(-50%, -15%);
-          transform: translate(-50%, -15%);
+  -webkit-transform: translate(-50%, -35%);
+          transform: translate(-50%, -35%);
 }
 
 .chat-content .chat-content-inner .confirm-side .admin-btns-wrapper #next-chapter-no .btn-ok-no-inner:hover {
@@ -420,6 +427,7 @@ button {
 
 .chat-content .chat-content-inner .chat li {
   position: relative;
+  overflow: visible;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -431,6 +439,8 @@ button {
 .chat-content .chat-content-inner .chat li p {
   font-size: 2rem;
   margin-left: 2rem;
+  width: 80%;
+  word-break: break-all;
 }
 
 .chat-content .chat-content-inner .chat li img {
@@ -441,7 +451,7 @@ button {
 .chat-content .chat-content-inner .chat li::after {
   content: "";
   position: absolute;
-  height: 3px;
+  height: 1.5px;
   width: 80%;
   right: 10%;
   bottom: -2%;
@@ -449,7 +459,7 @@ button {
 }
 
 .chat-content h2 {
-  font-size: 2.2rem;
+  font-size: 1.75rem;
   padding: 0.5rem;
   display: inline-block;
 }
@@ -509,7 +519,7 @@ button {
 }
 
 .log {
-  display: none;
+  visibility: hidden;
   position: fixed;
   z-index: 1000;
   width: 100vw;
@@ -549,6 +559,6 @@ h1 {
   color: red;
   margin-top: 1.5rem;
   margin-left: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 /*# sourceMappingURL=game.css.map */

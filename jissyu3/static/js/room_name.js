@@ -9,7 +9,8 @@ $(window).on("load", function(){
         let data = JSON.parse(e.data).res
         if(data.type == "userRequest"){
             $("#start").prop("disabled", true);
-            $("#start").text("管理者を待っています")
+            $("#start").html("<p>管理者を待っています</p>");
+            $("#loading-icon").css({display: "inline-block"});
         }
         else if(data.type == "adminPermit"){
             window.location = `${window.location.origin}/game/${$("#roomname span").text()}`
@@ -25,7 +26,6 @@ $(document).on("click","#start",function(){
         data: {"roomname":$("#roomname span").text()},
         dataType: "json",
         success: function(data){
-            console.log("aaa");
             redirectRoomSocket.send(JSON.stringify({"type": "userRequest"}))
         },
     })
