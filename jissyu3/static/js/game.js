@@ -33,7 +33,6 @@ function wordShow(){
 
         const chatLog = document.querySelector(".chat-log");
         chatLog.scrollTo(0, chatLog.scrollHeight);
-        console.log(chatLog.scrollHeight);
 
         if(word == "SYSTEM" && isNextChapterOk){
             $("#next-chapter").css({"display": "block"});
