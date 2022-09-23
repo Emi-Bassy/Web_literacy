@@ -49,6 +49,27 @@ function wordShow(){
     if("img" in word_info){
         $("#background-img").attr("src", word_info.img);
     }
+
+    if("characters" in word_info){
+        const characters = word_info.characters;
+        let insertCharacterHTML = "";
+
+        for(let i = 0; i < characters.length; i++){
+            insertCharacterHTML += `<img src="${characters[i]}" data-cnt=${i} class="one-character">`
+        }
+
+        $(".character-img-wrapper").html(insertCharacterHTML);
+        
+        if("focus" in word_info){
+            $(`.character-img-wrapper .one-character:nth-child(${word_info.focus + 1})`).css({
+                transform: "translateY(-40px)",
+                filter: "contrast(0.2)",
+            })
+        }
+    }
+    else{
+        $(".character-img-wrapper").html("");
+    }
 }
 
 

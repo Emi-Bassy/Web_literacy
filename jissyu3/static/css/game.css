@@ -43,7 +43,28 @@ button {
      object-fit: cover;
   top: 0;
   left: 0;
+  z-index: -2;
+}
+
+.scene-content .character-img-wrapper {
+  overflow: hidden;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
   z-index: -1;
+}
+
+.scene-content .character-img-wrapper .one-character {
+  width: 20%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .scene-content .speech {

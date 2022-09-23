@@ -30,6 +30,19 @@ def room(request, room_name):
 
     return render(request, "room.html", {"room_name": room_name})
 
+@csrf_exempt
+def roomcheck(request):
+    if request.method == "POST":
+        roomName = request.POST["roomname"]
+        try:
+            WaitingRooms.objects.get(roomName = roomName)
+            return JsonResponse({"now": "WAITING"})
+
+        except:
+            return JsonResponse({"now": "NOT_WAITING"})
+
+    else:
+        return JsonResponse({"res": "ERROR"})
 
 def roomname(request):
     if request.method == "POST":
@@ -86,4 +99,8 @@ def gameadmin(request, room_name):
         PlayingRooms.objects.get(roomName = room_name)
     except:
         return redirect("index")
+
+    if not "logined" in request.session:
+        return redirect("index")
+
     return render(request, "game.html", {"room_name": room_name, "isAdmin": True})

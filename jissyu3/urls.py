@@ -7,5 +7,6 @@ urlpatterns = [
     path("roomadmin", views.roomadmin, name="roomadmin"),
     path("login", views.login, name="login"),
     path("game/<str:room_name>", views.game, name="game"),
-    path("gameadmin/<str:room_name>", views.gameadmin, name="gameadmin")
+    path("gameadmin/<str:room_name>", views.gameadmin, name="gameadmin"),
+    path("api/v1/roomcheck", views.roomcheck, name="roomcheck"),
 ]

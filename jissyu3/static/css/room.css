@@ -17,6 +17,10 @@ button {
   cursor: pointer;
 }
 
+button:disabled {
+  cursor: not-allowed;
+}
+
 .top-bar {
   width: 100%;
   height: 4rem;

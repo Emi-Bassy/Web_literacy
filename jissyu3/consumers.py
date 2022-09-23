@@ -80,6 +80,10 @@ class RedirectConsumer(WebsocketConsumer):
 
             #リダイレクト許可用
             PlayingRooms(roomName=data["roomName"]).save()
+        
+        elif data["type"] == "adminReject":
+            theRoom = WaitingRooms.objects.get(roomName = data["roomName"])
+            theRoom.delete()
 
         async_to_sync(self.channel_layer.group_send)(
             self.room_group_name,
