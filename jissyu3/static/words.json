@@ -8,32 +8,48 @@
             "img": "/static/picture/living_night.jpg"
         },
         {
-            "愛": "第一志望の高校に受かったよ！"
+            "愛": "第一志望の高校に受かったよ！",
+            "characters": ["/static/picture/woman1.png"],
+            "focus": 0
         },
         {
-            "母": "おめでとう。頑張ったかいがあったね。"
+            "母": "おめでとう。頑張ったかいがあったね。",
+            "characters": ["/static/picture/woman1.png", "/static/picture/woman2.png"],
+            "focus": 1
         },
         {
-            "父": "無事受験終わったから、次の休みにでもスマホ買いに行こうか？"
+            "父": "無事受験終わったから、次の休みにでもスマホ買いに行こうか？",
+            "characters": ["/static/picture/woman1.png", "/static/picture/woman2.png", "/static/picture/man4.png"],
+            "focus": 2
         },
         {
-            "愛": "いいの？やったー。"
+            "愛": "いいの？やったー。",
+            "characters": ["/static/picture/woman1.png", "/static/picture/woman2.png", "/static/picture/man4.png"],
+            "focus": 0
         },
         {
             "高校入学後/6月": "教室/朝",
             "img": "/static/picture/class_day.jpg"
         },
         {
-            "愛": "昨日、○○ですごくかわいい服があったから、買っちゃった。"
+            "愛": "昨日、○○ですごくかわいい服があったから、買っちゃった。",
+            "characters": ["/static/picture/woman1.png"],
+            "focus": 0
         },
         {
-            "萌": "昨日インスタにあげてたやつ？"
+            "萌": "昨日インスタにあげてたやつ？",
+            "characters": ["/static/picture/woman1.png", "/static/picture/woman6.png"],
+            "focus": 1
         },
         {
-            "愛": "そうそう！それ。"
+            "愛": "そうそう！それ。",
+            "characters": ["/static/picture/woman1.png", "/static/picture/woman6.png"],
+            "focus": 0
         },
         {
-            "萌": "すごく似合ってたよ。"
+            "萌": "すごく似合ってたよ。",
+            "characters": ["/static/picture/woman1.png", "/static/picture/woman6.png"],
+            "focus": 1
         },
         {
             "加奈": "うん。すごく似合ってた。そういえばこの前、愛の誕生日にあげたジャケットあるじゃん？それと組み合わせてもイケるんじゃない？"
