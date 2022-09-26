@@ -9,7 +9,10 @@ $(document).on("click", ".permit", function(){
 
     redirectRoomSocket.onopen = function(){
       redirectRoomSocket.send(JSON.stringify({"type": "adminPermit", "roomName": roomName}))
-      window.location = `${window.location.origin}/gameadmin/${roomName}`
+      
+      setTimeout(() => {
+        window.location = `${window.location.origin}/gameadmin/${roomName}`;
+      }, 500);
     }
   }
 });

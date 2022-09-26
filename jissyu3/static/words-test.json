@@ -1,16 +1,24 @@
 {
     "1":[
         {
-            "太郎": "やあこんにちは"
+            "太郎": "やあこんにちは",
+            "characters": ["/static/picture/taro.png"],
+            "focus": 0
         },
         {
-            "花子": "どうもこんにちは"
+            "花子": "どうもこんにちは",
+            "characters": ["/static/picture/taro.png", "/static/picture/hanako.png"],
+            "focus": 1
         },
         {
-            "太郎": "魔王倒しに行かない？"
+            "太郎": "魔王倒しに行かない？",
+            "characters": ["/static/picture/taro.png", "/static/picture/hanako.png"],
+            "focus": 0
         },
         {
-            "花子": "いいね！いこう！"
+            "花子": "いいね！いこう！",
+            "characters": ["/static/picture/taro.png", "/static/picture/hanako.png"],
+            "focus": 1
         },
         {
             "太郎": "ここが魔王城か...",
