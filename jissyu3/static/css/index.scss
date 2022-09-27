@@ -1,0 +1,224 @@
+$mynavy: rgb(9, 9, 70);
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: vdl-gigamaru, sans-serif;
+    color: white;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+input{
+    outline: none;
+}
+
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 16%, rgba(10,113,198,1) 38%, rgba(10,113,198,1) 60%, rgba(9,9,121,1) 82%, rgba(2,0,36,1) 100%);
+}
+
+header{
+    width: 100%;
+    padding: 0.5rem;
+    background-color: $mynavy;
+    opacity: 0.8;
+    position: fixed;
+    z-index: 100;
+    h1{
+        margin-left: 0.8rem;
+        font-family: kozuka-gothic-pr6n, sans-serif;
+    }
+    
+}
+
+main{
+    margin-top: 6rem;
+    text-align: center;
+    h2{
+        font-size: 2.5rem;
+    }
+    
+    .subtitle{
+        margin-top: 1rem;
+    }
+
+    .input-field{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100vh;
+        margin-bottom: 20vh;
+        
+        .input-field-out{
+            width: 80%;
+            height: 50vh;
+            background-color: rgb(123, 129, 145);
+            position: relative;
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+
+            .input-field-inner{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 98.6%;
+                height: 98%;
+                clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+                background-color: $mynavy;
+
+                .roominfo{
+                    position: absolute;
+                    top: 5%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-size: 1.6rem;
+                }
+
+                #roomname{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 75%;
+                    height: 15%;
+                    background-color: rgb(43, 42, 42);
+                    border: 1px grey;
+                    padding-left: 1rem;
+                    font-size: 1.2rem;
+                    border: solid 2px grey;
+                }
+
+                #gotoroom{
+                    position: absolute;
+                    transition: all 0.3s ease;
+
+                    bottom: 2%;
+                    width: 40%;
+                    height: 25%;
+                    bottom: 4%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: white;
+                    clip-path: polygon(5% 0, 95% 0, 100% 16%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
+                    .gotoroom-inner{
+                        position: absolute;
+                        width: 99%;
+                        height: 98%;
+                        background-color: black;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        clip-path: polygon(5% 0, 95% 0, 100% 16%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
+                        overflow: hidden;
+                        .white-line{
+                            position: absolute;
+                            height: 1px;
+                            width: 50px;
+                            background-color: white;
+
+                            &:nth-child(1){
+                                top: 1%;
+                                left: 1%;
+                                transform: rotate(30deg);
+                            }
+
+                            &:nth-child(2){
+                                top: 1%;
+                                right: 1%;
+                                transform: rotate(-30deg);
+                            }
+
+                            &:nth-child(3){
+                                bottom: 1%;
+                                left: 1%;
+                                transform: rotate(-30deg);
+                            }
+
+                            &:nth-child(4){
+                                bottom: 1%;
+                                right: 1%;
+                                transform: rotate(30deg);
+                            }
+                            
+                            &:nth-child(5){
+                                top: 25%;
+                                transform: rotate(15deg);
+                            }
+
+                            &:nth-child(6){
+                                top: 25%;
+                                right: 0;
+                                transform: rotate(-15deg);
+                            }
+
+                            &:nth-child(7){
+                                bottom: 25%;
+                                right: 0;
+                                transform: rotate(15deg);
+                            }
+
+                            &:nth-child(8){
+                                bottom: 25%;
+                                transform: rotate(-15deg);
+                            }
+                        }
+
+                        .gotoroom-inner-white{
+                            overflow: hidden;
+                            position: absolute;
+                            width: 90%;
+                            height: 85%;
+                            background-color: white;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            clip-path: polygon(5% 0, 95% 0, 100% 16%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
+
+                            .gotoroom-inner-grey{
+                                overflow: hidden;
+                                position: absolute;
+                                width: 98%;
+                                height: 95%;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                background-color: rgb(86, 84, 84);
+                                clip-path: polygon(5% 0, 95% 0, 100% 16%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
+                                font-size: 2rem;
+                                font-weight: bold;
+                                color: rgb(117, 185, 234);
+                            }
+                        }
+                    }
+
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    float: right;
+
+    button{
+        background-color: grey;
+        color: rgb(135, 199, 135);
+        font-size: 1.5rem;
+        margin-right: 0.3rem;
+        margin-bottom: 0.3rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        border-radius: 3px;
+    }
+
+
+}
