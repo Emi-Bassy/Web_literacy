@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: vdl-gigamaru, sans-serif;
+  color: white;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+body {
+  background: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(16%, #090979), color-stop(38%, #0a71c6), color-stop(60%, #0a71c6), color-stop(82%, #090979), to(#020024));
+  background: linear-gradient(90deg, #020024 0%, #090979 16%, #0a71c6 38%, #0a71c6 60%, #090979 82%, #020024 100%);
+}
+
+header {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #090946;
+  opacity: 0.8;
+  position: fixed;
+  z-index: 100;
+}
+
+header h1 {
+  margin-left: 0.8rem;
+  font-family: kozuka-gothic-pr6n, sans-serif;
+}
+
+main {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 2.5rem;
+}
+
+main .subtitle {
+  margin-top: 1rem;
+}
+
+main .input-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100vh;
+  margin-bottom: 20vh;
+}
+
+main .input-field .input-field-out {
+  width: 80%;
+  height: 50vh;
+  background-color: #7b8191;
+  position: relative;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+main .input-field .input-field-out .input-field-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 98.6%;
+  height: 98%;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  background-color: #090946;
+}
+
+main .input-field .input-field-out .input-field-inner .roominfo {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 1.6rem;
+}
+
+main .input-field .input-field-out .input-field-inner #roomname {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 75%;
+  height: 15%;
+  background-color: #2b2a2a;
+  border: 1px grey;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+  border: solid 2px grey;
+}
+
+main .input-field .input-field-out .input-field-inner #gotoroom {
+  position: absolute;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  bottom: 2%;
+  width: 40%;
+  height: 25%;
+  bottom: 4%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: white;
+  -webkit-clip-path: polygon(5% 0, 95% 0, 100% 16%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
+          clip-path: polygon(5% 0, 95% 0, 100% 16%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
+}
+
+main .input-field .input-field-out .input-field-inner #gotoroom .gotoroom-inner {
+  position: absolute;
+  width: 99%;
+  height: 98%;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-clip-path: polygon(5% 0, 95% 0, 100% 16%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
+          clip-path: polygon(5% 0, 95% 0, 100% 16%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
+  overflow: hidden;
+}
+
+main .input-field .input-field-out .input-field-inner #gotoroom .gotoroom-inner .white-line {
+  position: absolute;
+  height: 1px;
+  width: 50px;
+  background-color: white;
+}
+
+main .input-field .input-field-out .input-field-inner #gotoroom .gotoroom-inner .white-line:nth-child(1) {
+  top: 1%;
+  left: 1%;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+main .input-field .input-field-out .input-field-inner #gotoroom .gotoroom-inner .white-line:nth-child(2) {
+  top: 1%;
+  right: 1%;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+main .input-field .input-field-out .input-field-inner #gotoroom .gotoroom-inner .white-line:nth-child(3) {
+  bottom: 1%;
+  left: 1%;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+main .input-field .input-field-out .input-field-inner #gotoroom .gotoroom-inner .white-line:nth-child(4) {
+  bottom: 1%;
+  right: 1%;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+main .input-field .input-field-out .input-field-inner #gotoroom .gotoroom-inner .white-line:nth-child(5) {
+  top: 25%;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+main .input-field .input-field-out .input-field-inner #gotoroom .gotoroom-inner .white-line:nth-child(6) {
+  top: 25%;
+  right: 0;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+main .input-field .input-field-out .input-field-inner #gotoroom .gotoroom-inner .white-line:nth-child(7) {
+  bottom: 25%;
+  right: 0;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+main .input-field .input-field-out .input-field-inner #gotoroom .gotoroom-inner .white-line:nth-child(8) {
+  bottom: 25%;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+main .input-field .input-field-out .input-field-inner #gotoroom .gotoroom-inner .gotoroom-inner-white {
+  overflow: hidden;
+  position: absolute;
+  width: 90%;
+  height: 85%;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-clip-path: polygon(5% 0, 95% 0, 100% 16%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
+          clip-path: polygon(5% 0, 95% 0, 100% 16%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
+}
+
+main .input-field .input-field-out .input-field-inner #gotoroom .gotoroom-inner .gotoroom-inner-white .gotoroom-inner-grey {
+  overflow: hidden;
+  position: absolute;
+  width: 98%;
+  height: 95%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #565454;
+  -webkit-clip-path: polygon(5% 0, 95% 0, 100% 16%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
+          clip-path: polygon(5% 0, 95% 0, 100% 16%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
+  font-size: 2rem;
+  font-weight: bold;
+  color: #75b9ea;
+}
+
+main .input-field .input-field-out .input-field-inner #gotoroom:hover {
+  opacity: 0.8;
+}
+
+footer {
+  float: right;
+}
+
+footer button {
+  background-color: grey;
+  color: #87c787;
+  font-size: 1.5rem;
+  margin-right: 0.3rem;
+  margin-bottom: 0.3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 3px;
+}
+/*# sourceMappingURL=index.css.map */

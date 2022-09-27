@@ -6,13 +6,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Document</title>
+    <title>中高生の情報連携教育</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="shortcut icon" href="{% static 'picture/RIST.png' %}" type="image/x-icon">
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'oyc7mpt',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
 </head>
 <body>
-    <input id="roomname" type="text" placeholder="ここに部屋名を入力">
-    <button id="gotoroom">OK!</button>
-    <script src="{% static 'js/gotoroom.js' %}"></script>
+    <header>
+        <h1>中高生の情報連携教育</h1>
+    </header>
+
+    <main>
+        <div class="titles">
+            <h2>R.I.S.T<br>～交錯するSNSで～</h2>
+            <h3 class="subtitle">炎上やトラブルが起こり勝ちなSNS、アナタは正しく使えていますか？</h3>
+        </div>
+
+        <div class="input-field">
+            <div class="input-field-out">
+                <div class="input-field-inner">
+                    <p class="roominfo">部屋名を入力してください</p>
+                    <input id="roomname" type="text" placeholder="ここに部屋名を入力(半角英数のみ)">
+                    <button id="gotoroom">
+                        <div class="gotoroom-inner">
+                            <div class="white-line"></div>
+                            <div class="white-line"></div>
+                            <div class="white-line"></div>
+                            <div class="white-line"></div>
+                            <div class="white-line"></div>
+                            <div class="white-line"></div>
+                            <div class="white-line"></div>
+                            <div class="white-line"></div>
+                            <div class="gotoroom-inner-white">
+                                <div class="gotoroom-inner-grey">OK!</div>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        
+        
+    </main>
+
+    <footer>
+        <button onclick="location.href='login'">管理者ログインはこちら</button>
+    </footer>
     
-    <button onclick="location.href='login'">管理者ログインはこちら</button>
+    
+    <script src="{% static 'js/gotoroom.js' %}"></script>
 </body>
 </html>
