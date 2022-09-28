@@ -1,0 +1,137 @@
+$mygreen: rgb(11, 70, 9);
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: vdl-gigamaru, sans-serif;
+    color: white;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(10,71,31,1) 16%, rgba(11,152,42,1) 38%, rgba(11,154,42,1) 60%, rgba(10,71,31,1) 82%, rgba(2,0,36,1) 100%);
+}
+
+header{
+    width: 100%;
+    padding: 0.5rem;
+    background-color: $mygreen;
+    opacity: 0.8;
+    position: fixed;
+    z-index: 100;
+    h1{
+        margin-left: 0.8rem;
+        font-family: kozuka-gothic-pr6n, sans-serif;
+    }
+    
+}
+
+main{
+    margin-top: 6rem;
+    text-align: center;
+    h2{
+        font-size: 2rem;
+    } 
+
+    ul{
+        list-style: none;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        li{
+            width: 40%;
+            height: 5rem;
+            background-color: rgb(16, 91, 12);
+            clip-path: polygon(5% 0, 95% 0, 100% 16%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
+            position: relative;
+            margin: 1rem 1.5rem;
+
+            .permit{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 95%;
+                height: 94%;
+                background-color: rgb(140, 212, 136);
+                clip-path: polygon(5% 0, 95% 0, 100% 16%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
+                font-size: 2.1rem;
+                z-index: 2;
+            }
+
+            .reject{
+                position: absolute;
+                z-index: 3;
+                top: 50%;
+                right: 10%;
+                transform: translateY(-50%);
+                overflow: visible;
+                width: 10%;
+                height: 50%;
+                
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 30px;
+                    height: 4px;
+                    background-color: red;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate(-45deg);
+                    transition: all 0.3s;
+                }
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 30px;
+                    height: 4px;
+                    background-color: red;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate(45deg);
+                    transition: all 0.3s;
+                }
+
+                &:hover{
+                    &::after{
+                        transform: translate(-50%, -50%) rotate(315deg);
+                    }
+                    &::before{
+                        transform: translate(-50%, -50%) rotate(225deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    position: fixed;
+    bottom: 1px;
+    right: 1px;
+
+    button{
+        background-color: rgb(63, 56, 56);
+        color: rgb(184, 41, 41);
+        font-size: 1.5rem;
+        margin-right: 0.3rem;
+        margin-bottom: 0.3rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        border-radius: 3px;
+        border: solid 1px grey;
+    }
+
+
+}

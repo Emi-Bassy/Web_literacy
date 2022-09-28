@@ -8,5 +8,6 @@ urlpatterns = [
     path("login", views.login, name="login"),
     path("game/<str:room_name>", views.game, name="game"),
     path("gameadmin/<str:room_name>", views.gameadmin, name="gameadmin"),
+    path("logout", views.logout, name="logout"),
     path("api/v1/roomcheck", views.roomcheck, name="roomcheck"),
 ]
