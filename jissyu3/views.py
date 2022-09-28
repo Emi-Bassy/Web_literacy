@@ -81,11 +81,18 @@ def login(request):
         if request.POST["password"] == "password":
             request.session["logined"] = True
             return redirect("roomadmin")
+        return render(request, "login.html")
     else:
         if not "logined" in request.session:
             return render(request, "login.html")
         else:
-            return redirect("roomadmin")     
+            return redirect("roomadmin")  
+
+def logout(request):
+    if "logined" in request.session:
+        request.session.pop("logined")
+    
+    return redirect("index")
 
 def game(request, room_name):
     try:

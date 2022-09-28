@@ -3,21 +3,42 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>Login_gamemaster</title>
+    <title>管理者画面</title>
     <script src="{% static 'lib/jquery-3.6.0.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/roomadmin.css' %}">
+    <link rel="shortcut icon" href="{% static 'picture/RIST.png' %}" type="image/x-icon">
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'oyc7mpt',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
 </head>
 <body>
-    <h1>管理者画面</h1>
-    <h2>待機グループ一覧</h2>
-    <input type="text" name="roomname_search" id="search_roomname">
-    <ul id = "roomname_result">
-    {% for rooms in WaitingRooms_result %}
-        <h3>{{rooms.roomName}}</h3>
-        <button class="permit" data-roomName={{rooms.roomName}}>許可</button>
-        <button class="reject" data-roomName={{rooms.roomName}}>拒否</button>
-        <br>
-    {% endfor %}
-    </ul>
+    <header>
+        <h1>中高生の情報連携教育・管理者モード</h1>
+    </header>
+
+    <main>
+        <h2>管理者待ちのグループ一覧です</h2>
+        <ul id = "roomname_result">
+        {% for rooms in WaitingRooms_result %}
+            <li>
+              <button class="permit" data-roomName={{rooms.roomName}}>{{rooms.roomName}}</button>
+              <button class="reject" data-roomName={{rooms.roomName}}></button>
+            </li>
+        {% endfor %}
+        </ul>
+    </main>
+
+    <footer>
+      <button onclick="location.href='logout'">ログアウト</button>
+    </footer>
+
     <script src="{% static 'js/room_admin.js' %}"></script>
 </body>
 </html>
