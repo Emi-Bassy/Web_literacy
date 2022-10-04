@@ -1,0 +1,119 @@
+{
+    "1":[
+        {
+            "太郎": "やあこんにちは",
+            "characters": ["/static/picture/taro.png"],
+            "focus": 0
+        },
+        {
+            "花子": "どうもこんにちは",
+            "characters": ["/static/picture/taro.png", "/static/picture/hanako.png"],
+            "focus": 1
+        },
+        {
+            "太郎": "魔王倒しに行かない？",
+            "characters": ["/static/picture/taro.png", "/static/picture/hanako.png"],
+            "focus": 0
+        },
+        {
+            "花子": "いいね！いこう！",
+            "characters": ["/static/picture/taro.png", "/static/picture/hanako.png"],
+            "focus": 1
+        },
+        {
+            "太郎": "ここが魔王城か...",
+            "img": "/static/picture/mao_castle.png"
+        },
+        {
+            "魔王": "フハハハハハ！お足元の悪い中よくぞおいでなさったぞ勇者ども！だがここで終わりだ！ガハハハッ！"
+        },
+        {
+            "SYSTEM": "どうしますか？",
+            "branch": true
+        },
+        {
+            "Branches":[
+                [
+                    {
+                        "花子": "魔法を唱えるわ！"
+                    },
+                    {
+                        "魔王": "聞かぬわそんなもん！これでもくらえー"
+                    },
+                    {
+                        "花子・太郎": "ぐわー－－－！"
+                    },
+                    {
+                        "SYSTEM": "BAD END",
+                        "end": true
+                    }
+                ],
+                [
+                    {
+                        "花子": "剣でしばくわ！"
+                    },
+                    {
+                        "魔王": "うぐぅ...だがここで終わるわけにはいかん、退散させてもらうぞ"
+                    },
+                    {
+                        "太郎": "待ちやがれ！"
+                    },
+                    {
+                        "SYSTEM": "どうしますか？",
+                        "branch": true
+                    },
+                    {
+                        "Branches": [
+                            [
+                                {
+                                    "太郎": "おいかけるぞ！"
+                                },
+                                {
+                                    "花子": "ええ！"
+                                },
+                                {
+                                    "太郎": "追いついたぞ！"
+                                },
+                                {
+                                    "魔王": "ぐわー－－－"
+                                },
+                                {
+                                    "SYSTEM": "TRUE END",
+                                    "end": true
+                                }
+                            ],
+                            [
+                                {
+                                    "太郎": "めんどくさいな..."
+                                },
+                                {
+                                    "花子": "おなか減ったし帰ろうか～"
+                                },
+                                {
+                                    "太郎": "そうだねぇ、しばらくはあいつも動けないだろうし"
+                                },
+                                {
+                                    "SYSTEM": "NORMAL END",
+                                    "end": true
+                                }
+                            ]
+                        ]
+                    }
+                ]
+            ]
+        }
+    ],
+    "2": [
+            {
+                "太郎": "やっと村に戻ってこれたぞ！",
+                "img": "/static/picture/village.png"
+            },
+            {
+                "花子": "疲れたわねー－－－"
+            },
+            {
+                "SYSTEM": "終了しますか？",
+                "exit": true
+            }
+    ]
+}
