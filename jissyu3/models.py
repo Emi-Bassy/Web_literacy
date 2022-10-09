@@ -6,6 +6,7 @@ from django.utils import timezone
 class WaitngUsers(models.Model):
     roomName = models.CharField(max_length=50, primary_key=True)
     userNum = models.IntegerField(default=1)
+    createTime = models.DateTimeField(default=timezone.now())
 
 class WaitingRooms(models.Model):
     roomName = models.CharField(max_length=50 ,primary_key=True)

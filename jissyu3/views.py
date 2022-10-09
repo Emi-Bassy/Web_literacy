@@ -2,7 +2,7 @@ from email import contentmanager
 from multiprocessing import context
 import re
 from django.shortcuts import render, redirect
-from jissyu3.models import WaitingRooms, PlayingRooms
+from jissyu3.models import WaitngUsers, WaitingRooms, PlayingRooms
 from django.http import HttpResponse,JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.utils import timezone
@@ -14,6 +14,11 @@ def index(request):
     for room in playRoomAll:
         if (timezone.now() - room.createTime).seconds >= 3600:
             room.delete()
+
+    WaitUserRoomAll = WaitngUsers.objects.all()
+    for userRoom in WaitUserRoomAll:
+        if (timezone.now() - userRoom.createTime).seconds >= 3600:
+            userRoom.delete()
 
     return render(request, "index.html")
 
