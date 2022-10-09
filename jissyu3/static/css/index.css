@@ -49,6 +49,51 @@ main .subtitle {
   margin-top: 1rem;
 }
 
+main .down-arrow {
+  display: inline-block;
+  width: 50px;
+  height: 80px;
+  margin-top: 25vh;
+  position: relative;
+  overflow: visible;
+  -webkit-animation: down-arrow-anime 2s ease infinite;
+          animation: down-arrow-anime 2s ease infinite;
+}
+
+main .down-arrow::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 3px;
+  height: 100%;
+  background-color: white;
+}
+
+main .down-arrow::after {
+  content: "";
+  position: absolute;
+  bottom: -4%;
+  left: 67%;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  width: 2px;
+  height: 50%;
+  background-color: white;
+}
+
+main .down-arrow .down-arrow-text {
+  position: absolute;
+  top: 50%;
+  left: -45%;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+}
+
 main .input-field {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,7 +104,7 @@ main .input-field {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 100vh;
+  margin-top: 85vh;
   margin-bottom: 20vh;
 }
 
@@ -248,5 +293,35 @@ footer button {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   border-radius: 3px;
+}
+
+@-webkit-keyframes down-arrow-anime {
+  0% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  50% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  100% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+}
+
+@keyframes down-arrow-anime {
+  0% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  50% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  100% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
 }
 /*# sourceMappingURL=index.css.map */
