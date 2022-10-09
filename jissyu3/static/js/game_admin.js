@@ -12,7 +12,7 @@ $(document).on("click", "#nextOk-btn", function(){
         if("Branches" in nowJson[nowJson.length - 1]){
             const selector = nowJson[nowJson.length - 1].Branches.length;
             for(let i = 0; i < selector; i++){
-                $(".admin-btns-wrapper").append(`<button id="next-chapter-ok" class="branches" data-branchNum="${i + 1}"><div class="btn-ok-no-inner"><p>${i + 1}</p></div></button>`)
+                $(".admin-btns-wrapper").append(`<button id="next-chapter-ok" class="branches" data-branchNum="${i + 1}" title=${nowJson[nowJson.length - 1].Branches[i][0]["branch-content"]}><div class="btn-ok-no-inner"><p>${i + 1}</p></div></button>`)
             }
         }
         else{

@@ -48,11 +48,52 @@ main{
         margin-top: 1rem;
     }
 
+    .down-arrow{
+        display: inline-block;
+        width: 50px;
+        height: 80px;
+        margin-top: 25vh;
+        position: relative;
+        overflow: visible;
+        animation: down-arrow-anime 2s ease infinite;
+
+        &::before{
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            width: 3px;
+            height: 100%;
+            background-color: white;
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: -4%;
+            left: 67%;
+            transform: rotate(30deg);
+            width: 2px;
+            height: 50%;
+            background-color: white;
+        }
+
+        .down-arrow-text{
+            position: absolute;
+            top: 50%;
+            left: -45%;
+            transform: translateY(-50%) rotate(90deg);
+            font-size: 1.3rem;
+            letter-spacing: 0.1rem;
+        }
+    }
+
     .input-field{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 100vh;
+        margin-top: 85vh;
         margin-bottom: 20vh;
         
         .input-field-out{
@@ -221,4 +262,17 @@ footer{
     }
 
 
+}
+
+
+@keyframes down-arrow-anime {
+    0%{
+        transform: translateY(10%);
+    }
+    50%{
+        transform: translateY(-10%);
+    }
+    100%{
+        transform: translateY(10%);
+    }
 }

@@ -330,7 +330,8 @@
                         "愛": "まずは会員登録しなきゃ。",
                         "img": "/static/picture/roomR_night.jpg",
                         "characters": [ "/static/picture/josei_01_b.png"],
-                        "focus": 0
+                        "focus": 0,
+                        "branch-content": "アクセスする"
                     },
                     {
                         "愛": "入力完了っと。あとはパスワードね。どうしよう。忘れても困るしインスタと同じのでいいかな？",
@@ -347,7 +348,8 @@
                                 {
                                     "愛": "パスワードはわからなくなったら困るし、同じでいっか。",
                                     "characters": [ "/static/picture/josei_01_a.png"],
-                                    "focus": 0
+                                    "focus": 0,
+                                    "branch-content": "パスワードを変えない"
                                 },
                                 {
                                     "愛": "さてとあとは、お父さ～ん。買いたいものあるからクレジットカード貸して。",
@@ -550,7 +552,8 @@
                                 {
                                     "愛": "パスワードはわからなくなったら困るからメモして新しいパスワードにしよう",
                                     "characters": [ "/static/picture/josei_01_b.png"],
-                                    "focus": 0
+                                    "focus": 0,
+                                    "branch-content": "新しいパスワードに"
                                 },
                                 {
                                     "愛": "さてとあとは、お父さ～ん。買いたいものあるからクレジットカード貸して。",
@@ -675,7 +678,8 @@
                     {
                         "愛": "…ん？このサイトよく見たらhttpsじゃなくてhttpになってる…",
                         "characters": [ "/static/picture/josei_01_b.png"],
-                        "focus": 0
+                        "focus": 0,
+                        "branch-content": "アクセスしない"
                     },
                     {
                         "愛": "そういえばこの前授業で、httpは通信暗号化されてないから注意が必要とか言ってたような...？",
@@ -754,7 +758,8 @@
                                 {
                                     "愛": "パスワードはわからなくなったら困るし、同じでいっか。",
                                     "characters": [ "/static/picture/josei_01_b.png"],
-                                    "focus": 0
+                                    "focus": 0,
+                                    "branch-content": "パスワードを変えない"
                                 },
                                 {
                                     "愛": "さてとあとは、お父さ～ん。買いたいものあるからクレジットカード貸して。",
@@ -831,7 +836,8 @@
                                 {
                                     "愛": "パスワードはわからなくなったら困るからメモして新しいパスワードにしよう",
                                     "characters": [ "/static/picture/josei_01_b.png"],
-                                    "focus": 0
+                                    "focus": 0,
+                                    "branch-content": "新しいパスワードに"
                                 },
                                 {
                                     "愛": "さてとあとは、お父さ～ん。買いたいものあるからクレジットカード貸して。",
@@ -978,7 +984,8 @@
             "Branches": [
                 [
                     {
-                        "ー": "数時間後"
+                        "ー": "数時間後",
+                        "branch-content": "サイトにアクセス+パスワードそのまま"
                     },
                     {
                         "下っ端B": "早速引っかかったやつが現れました。",
@@ -1023,7 +1030,8 @@
                 ],
                 [
                     {
-                        "ー": "数時間後"
+                        "ー": "数時間後",
+                        "branch-content": "サイトにアクセスしないorパスワード変えた"
                     },
                     {
                         "下っ端B": "早速引っかかったやつが現れました。",
@@ -1209,7 +1217,8 @@
                         "卓也": "まあまあ、秀樹は心配性だな。もっと気楽にいこうぜ。",
                         "img": "/static/picture/ryokan_front.jpg",
                         "characters": ["/static/picture/dansei_01_b.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_a.png"],
-                        "focus": 0
+                        "focus": 0,
+                        "branch-content": "投稿した"
                     },
                     {
                         "秀樹": "え～。まぁ、そうだね。",
@@ -1275,7 +1284,8 @@
                                 {
                                     "卓也": "大丈夫でしょ。写真載せただけだし。",
                                     "characters": ["/static/picture/dansei_01_b.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_b.png"],
-                                    "focus": 0
+                                    "focus": 0,
+                                    "branch-content": "訂正しない"
                                 },
                                 {
                                     "さらに数日後": "自室/朝",
@@ -1469,7 +1479,8 @@
                                 {
                                     "卓也": "確かに…なんか怖いし一応訂正の投稿しておくわ。",
                                     "characters": ["/static/picture/dansei_01_b.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_a.png"],
-                                    "focus": 0
+                                    "focus": 0,
+                                    "branch-content": "訂正する"
                                 },
                                 {
                                     "秀樹": "うん。それがいいよ",
@@ -1671,7 +1682,8 @@
                     {
                         "卓也": "そこまでいうなら...。やめとくよ。",
                         "characters": ["/static/picture/dansei_01_b.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_a.png"],
-                        "focus": 0
+                        "focus": 0,
+                        "branch-content": "投稿しない"
                     },
                     {
                         "秀樹": "それに、思い出なんて別にSNSに投稿しなくても内輪ネタでいいだろ",
@@ -1767,7 +1779,8 @@
             "Branches": [
                 [
                     {
-                        "ー": "とあるSNS利用者Aは偶然主人公の投稿を発見"
+                        "ー": "とあるSNS利用者Aは偶然主人公の投稿を発見",
+                        "branch-content": "投稿した+訂正しない"
                     },
                     {
                         "SNS利用者A": "あれ、このお皿って○○旅館にあったやつじゃん。こんな、価値があったんだ。みんなに教えてあげよう。",
@@ -1839,7 +1852,8 @@
                 ],
                 [
                     {
-                        "ー": "とあるSNS利用者Aは偶然主人公の投稿を発見"
+                        "ー": "とあるSNS利用者Aは偶然主人公の投稿を発見",
+                        "branch-content": "投稿した+訂正した"
                     },
                     {
                         "SNS利用者A": "あれ、このお皿って○○旅館にあったやつじゃん。こんな、価値があったんだ。みんなに教えてあげよう。",
@@ -1917,7 +1931,8 @@
                 ],
                 [
                     {
-                        "ー": "SNS利用者Aは旅行の思い出を振り返っていた"
+                        "ー": "SNS利用者Aは旅行の思い出を振り返っていた",
+                        "branch-content": "投稿しない"
                     },
                     {
                         "SNS利用者A": "この前泊まった○○旅館すごくよかったよなぁ",
