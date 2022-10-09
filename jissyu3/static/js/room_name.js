@@ -2,7 +2,7 @@ let redirectRoomSocket;
 
 $(window).on("load", function(){
     redirectRoomSocket = new WebSocket(
-        `ws://${window.location.host}/ws/redirect/${$("#roomname span").text()}/`
+        `${window.location.protocol == "https:" ? "wss" : "ws"}://${window.location.host}/ws/redirect/${$("#roomname span").text()}/`
     )
 
     redirectRoomSocket.onmessage = function(e){

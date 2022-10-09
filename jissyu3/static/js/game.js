@@ -96,7 +96,7 @@ $(window).on("load", function(){
 
     //チャットへの接続
     chatSocket = new WebSocket(
-        `ws://${window.location.host}/ws/chat/${$("#roomName").text()}/`
+        `${window.location.protocol == "https:" ? "wss" : "ws"}://${window.location.host}/ws/chat/${$("#roomName").text()}/`
     );
     
     chatSocket.onmessage = function(e){

@@ -4,7 +4,7 @@ $(document).on("click", ".permit", function(){
     let roomName = $(this).attr("data-roomName");
 
     let redirectRoomSocket = new WebSocket(
-      `ws://${window.location.host}/ws/redirect/${roomName}/`
+      `${window.location.protocol == "https:" ? "wss" : "ws"}://${window.location.host}/ws/redirect/${roomName}/`
     )
 
     redirectRoomSocket.onopen = function(){
@@ -23,7 +23,7 @@ $(document).on("click", ".reject", function(){
     let roomName = $(this).attr("data-roomName");
 
     let redirectRoomSocket = new WebSocket(
-      `ws://${window.location.host}/ws/redirect/${roomName}/`
+      `${window.location.protocol == "https:" ? "wss" : "ws"}://${window.location.host}/ws/redirect/${roomName}/`
     )
 
     redirectRoomSocket.onopen = function(){
