@@ -25,10 +25,10 @@ SECRET_KEY = 'django-insecure-a4^zqq$h04_7w-7k9cql_j2ab=zygu7ckkg8%jek6-4x5cyv4z
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = True
-
 if os.environ.get("HONBAN"):
     DEBUG = False
+else:
+    DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -82,22 +82,14 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'django_db',
+        "USER": "akahoshi2",
+        "PASSWORD": "Warthunder0310",
+        "HOST": "localhost",
+        "PORT": "",
     }
 }
-
-if DEBUG == False:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'django_db',
-            "USER": "akahoshi",
-            "PASSWORD": str(os.environ.get("DB_PASSWORD")),
-            "HOST": "localhost",
-            "PORT": "",
-        }
-    }
 
 
 # Password validation

@@ -1,0 +1,60 @@
+{
+    "1":[
+        {
+            "太郎": "やあこんにちは",
+            "characters": ["/static/picture/taro.png"],
+            "focus": 0
+        },
+        {
+            "花子": "どうもこんにちは",
+            "characters": ["/static/picture/taro.png", "/static/picture/hanako.png"],
+            "focus": 1
+        },
+        {
+            "太郎": "魔王倒しに行かない？",
+            "characters": ["/static/picture/taro.png", "/static/picture/hanako.png"],
+            "focus": 0
+        },
+        {
+            "花子": "いいね！いこう！",
+            "characters": ["/static/picture/taro.png", "/static/picture/hanako.png"],
+            "focus": 1
+        },
+        {
+            "太郎": "ここが魔王城か...",
+            "img": "/static/picture/mao_castle.png"
+        },
+        {
+            "魔王": "フハハハハハ！お足元の悪い中よくぞおいでなさったぞ勇者ども！だがここで終わりだ！ガハハハッ！"
+        },
+        {
+            "SYSTEM": "どうしますか？"
+        }
+    ],
+    "2":[
+        {
+            "太郎": "やっと村に戻ってこれたぞ！",
+            "img": "/static/picture/village.png"
+        },
+        {
+            "花子": "疲れたわねー－－－"
+        },
+        {
+            "SYSTEM": "次へ進みますか？"
+        }
+    ],
+    "3":[
+        {
+            "長老": "お前さんたち、ご苦労じゃったな"
+        },
+        {
+            "長老": "これはほんのお礼じゃ"
+        },
+        {
+            "太郎": "金塊が...こんなに...！！"
+        },
+        {
+            "SYSTEM": "終了しますか？"
+        }
+    ]
+}
