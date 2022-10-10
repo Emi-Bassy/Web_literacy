@@ -92,7 +92,7 @@ if DEBUG == False:
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'django_db',
-            "USER": "akahoshi1421",
+            "USER": "akahoshi",
             "PASSWORD": str(os.environ.get("DB_PASSWORD")),
             "HOST": "localhost",
             "PORT": "",
