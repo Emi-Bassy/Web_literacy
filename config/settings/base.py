@@ -14,7 +14,7 @@ from pathlib import Path
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -25,12 +25,9 @@ SECRET_KEY = 'django-insecure-a4^zqq$h04_7w-7k9cql_j2ab=zygu7ckkg8%jek6-4x5cyv4z
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-if os.environ.get("HONBAN"):
-    DEBUG = False
-else:
-    DEBUG = True
+# DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+# ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -80,16 +77,16 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'django_db',
-        "USER": "akahoshi2",
-        "PASSWORD": "Warthunder0310",
-        "HOST": "localhost",
-        "PORT": "",
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'django_db',
+#         "USER": "akahoshi2",
+#         "PASSWORD": "Warthunder0310",
+#         "HOST": "localhost",
+#         "PORT": "",
+#     }
+# }
 
 
 # Password validation
