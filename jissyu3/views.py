@@ -2,7 +2,7 @@ from email import contentmanager
 from multiprocessing import context
 import re
 from django.shortcuts import render, redirect
-from jissyu3.models import WaitingRooms, PlayingRooms
+from jissyu3.models import WaitngUsers, WaitingRooms, PlayingRooms
 from django.http import HttpResponse,JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.utils import timezone
@@ -15,18 +15,39 @@ def index(request):
         if (timezone.now() - room.createTime).seconds >= 3600:
             room.delete()
 
+    WaitUserRoomAll = WaitngUsers.objects.all()
+    for userRoom in WaitUserRoomAll:
+        if (timezone.now() - userRoom.createTime).seconds >= 3600:
+            userRoom.delete()
+
     return render(request, "index.html")
 
 @csrf_exempt
 def room(request, room_name):
     if request.method == "POST":
         roomName = request.POST["roomname"]
-        result = WaitingRooms(roomName = roomName)
-        result.save()
+        try:
+            result = WaitingRooms(roomName = roomName)
+            result.save()
+        except:
+            pass
         return JsonResponse({"res": "SUCCESS"})
 
     return render(request, "room.html", {"room_name": room_name})
 
+@csrf_exempt
+def roomcheck(request):
+    if request.method == "POST":
+        roomName = request.POST["roomname"]
+        try:
+            WaitingRooms.objects.get(roomName = roomName)
+            return JsonResponse({"now": "WAITING"})
+
+        except:
+            return JsonResponse({"now": "NOT_WAITING"})
+
+    else:
+        return JsonResponse({"res": "ERROR"})
 
 def roomname(request):
     if request.method == "POST":
@@ -65,11 +86,18 @@ def login(request):
         if request.POST["password"] == "password":
             request.session["logined"] = True
             return redirect("roomadmin")
+        return render(request, "login.html")
     else:
         if not "logined" in request.session:
             return render(request, "login.html")
         else:
-            return redirect("roomadmin")     
+            return redirect("roomadmin")  
+
+def logout(request):
+    if "logined" in request.session:
+        request.session.pop("logined")
+    
+    return redirect("index")
 
 def game(request, room_name):
     try:
@@ -83,4 +111,8 @@ def gameadmin(request, room_name):
         PlayingRooms.objects.get(roomName = room_name)
     except:
         return redirect("index")
+
+    if not "logined" in request.session:
+        return redirect("index")
+
     return render(request, "game.html", {"room_name": room_name, "isAdmin": True})

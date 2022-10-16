@@ -6,24 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="{% static 'lib/jquery-3.6.0.min.js' %}"></script>
-    <title>Document</title>
+    <title>ゲーム画面</title>
     <link rel="stylesheet" href="{% static 'css/game.css' %}">
+    <link rel="shortcut icon" href="{% static 'picture/RIST.png' %}" type="image/x-icon">
     {% if isAdmin %}
     <!-- 安川さんへ、管理者用のCSSを作るなら下記のCSSファイルに記述してください -->
         <link rel="stylesheet" href="{% static 'css/game_admin.css' %}">
+    
+    
     {% endif %}
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'oyc7mpt',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
 </head>
 <body>
     <h1>ゲーム画面</h1>
     {% if isAdmin %}
-        <h2>管理人モード</h2>
+        <h2 class="admin-mode">管理人モード</h2>
     {% endif %}
-    <p>今は仮で赤色がユーザ、青色が管理者のアイコンになってます。</p>
-    <p>また管理者のゲーム画面にある!ボタンは次の章へ進むことを全ユーザに許可するボタンです。</p>
     <div class="chat-content">
-        <h2><span id="roomName">{{room_name}}</span>:<span id="chapterNum"></span></h2>
+        <div class="arrow-btn">
+
+        </div>
+
+        <h2>グループ <span id="roomName">{{room_name}}</span>:<span id="chapterNum"></span></h2>
         {% if isAdmin %}
-            <button id="nextOk-btn" data-now="chat">！</button>
+            <button id="nextOk-btn" data-now="chat"><div class="nextOk-btn-inner"><p>!</p></div></button>
+            
         {% endif %}
         <!-- チャットの一覧↓ -->
         <div class="chat-content-inner">
@@ -31,14 +47,16 @@
                 <ul class="chat">
 
                 </ul>
-                <input type="text" id="chat-text">
-                <button id="chat-btn">送信</button>
+                <input type="text" id="chat-text" placeholder="メッセージを入力">
+                <button id="chat-btn"></button>
             </div>
             {% if isAdmin %}
                 <div class="confirm-side">
-                    <p>次の章へ進むのを許可しますか？</p>
-                    <button id="next-chapter-ok">OK</button>
-                    <button id="next-chapter-no">NO</button>
+                    <p>選択肢はどうしますか？</p>
+                    <div class="admin-btns-wrapper">
+                        
+                    </div>
+                    
                 </div>
             {% endif %}
         </div>
@@ -47,25 +65,42 @@
 
     <div class="scene-content">
         <!-- 背景画像↓ -->
-        <img src="" id="background-img">
+        <div class="bg-img-wrapper">
+            <img src="" id="background-img">
+        </div>
+
+        <div class="character-img-wrapper">
+          
+        </div>
+        
 
         <div class="speech">
             <!-- キャラクター名↓ -->
-            <div class="character-name">
+            <div class="character-wrapper">
+                <div class="character-name">
                 
+                </div>
             </div>
+            <div class="outdesign"></div>
+            
 
             <!-- セリフ -->
-            <div class="words">
+                <div class="words">
 
-            </div>
+                </div>
+
             <button id="next-chapter">YES</button>
 
             <!-- 次のセリフへ進むボタン -->
+            
             <button id="next-btn">次へ</button>
+            
 
             <!-- ログを表示するボタン -->
-            <button id="log-btn">Log</button>
+            <div class="log-btn-wrapper">
+                <button id="log-btn">Log</button>
+            </div>
+            
         </div>
     </div>
 

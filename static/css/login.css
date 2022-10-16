@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: vdl-gigamaru, sans-serif;
+    color: white;
+}
+
+body {
+    background: #020024;
+    background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(16%, #0a471f), color-stop(38%, #0b982a), color-stop(60%, #0b9a2a), color-stop(82%, #0a471f), to(#020024));
+    background: linear-gradient(90deg, #020024 0%, #440d5a 16%, #350b98 38%, #350b98 60%, #440d5a 82%, #020024 100%);
+}
+
+header {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #350946;
+    opacity: 0.8;
+    position: fixed;
+    z-index: 100;
+}
+
+header h1 {
+    margin-left: 0.8rem;
+    font-family: kozuka-gothic-pr6n, sans-serif;
+}
+
+main {
+    margin-top: 6rem;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.form-password {
+    color: black;
+    width: 30%;
+    height: 20%;
+    margin-top: 5rem;
+}
+
+.btn-submit {
+    background-color: #3f3838;
+    color: #b82929;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    margin-right: 0.3rem;
+    margin-bottom: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 3px;
+    border: solid 1px grey;;
+}

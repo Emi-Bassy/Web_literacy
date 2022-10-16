@@ -1,16 +1,24 @@
 {
     "1":[
         {
-            "太郎": "やあこんにちは"
+            "太郎": "やあこんにちは",
+            "characters": ["/static/picture/taro.png"],
+            "focus": 0
         },
         {
-            "花子": "どうもこんにちは"
+            "花子": "どうもこんにちは",
+            "characters": ["/static/picture/taro.png", "/static/picture/hanako.png"],
+            "focus": 1
         },
         {
-            "太郎": "魔王倒しに行かない？"
+            "太郎": "魔王倒しに行かない？",
+            "characters": ["/static/picture/taro.png", "/static/picture/hanako.png"],
+            "focus": 0
         },
         {
-            "花子": "いいね！いこう！"
+            "花子": "いいね！いこう！",
+            "characters": ["/static/picture/taro.png", "/static/picture/hanako.png"],
+            "focus": 1
         },
         {
             "太郎": "ここが魔王城か...",
@@ -20,13 +28,7 @@
             "魔王": "フハハハハハ！お足元の悪い中よくぞおいでなさったぞ勇者ども！だがここで終わりだ！ガハハハッ！"
         },
         {
-            "花子": "やった倒したわ！"
-        },
-        {
-            "魔王": "クッ...ここまでか...だがワシが倒れても第二第三第nの魔王が..."
-        },
-        {
-            "SYSTEM": "次へ進みますか？"
+            "SYSTEM": "どうしますか？"
         }
     ],
     "2":[

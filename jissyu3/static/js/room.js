@@ -3,7 +3,7 @@ $(window).on("load", function(){
     let theroom = document.querySelector("#roomname span").textContent;
 
     let matchingRoomSocket = new WebSocket(
-        `ws://${window.location.host}/ws/matchingroom/${theroom}/`
+        `${window.location.protocol == "https:" ? "wss" : "ws"}://${window.location.host}/ws/matchingroom/${theroom}/`
     );
 
     matchingRoomSocket.onmessage = function(e){

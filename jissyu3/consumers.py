@@ -3,6 +3,7 @@ from channels.generic.websocket import WebsocketConsumer
 import json
 from jissyu3.models import WaitingRooms, WaitngUsers, PlayingRooms
 from jissyu3.views import roomname
+from django.utils import timezone
 
 class MatchingConsumer(WebsocketConsumer):
     def connect(self):
@@ -21,6 +22,7 @@ class MatchingConsumer(WebsocketConsumer):
             theRoom = WaitngUsers.objects.get(roomName = self.room_name)
             theRoom.userNum += 1
             n = theRoom.userNum
+            theRoom.createTime = timezone.now()
             theRoom.save()
         except:
             NewRoom = WaitngUsers(roomName = self.room_name)
@@ -80,6 +82,10 @@ class RedirectConsumer(WebsocketConsumer):
 
             #リダイレクト許可用
             PlayingRooms(roomName=data["roomName"]).save()
+        
+        elif data["type"] == "adminReject":
+            theRoom = WaitingRooms.objects.get(roomName = data["roomName"])
+            theRoom.delete()
 
         async_to_sync(self.channel_layer.group_send)(
             self.room_group_name,
