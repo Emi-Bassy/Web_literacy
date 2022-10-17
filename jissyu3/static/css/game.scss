@@ -79,7 +79,15 @@ button{
         .words{
             width: 81%;
             padding: 1rem;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
+        }
+
+        #next-show{
+            position: absolute;
+            bottom: 1rem;
+            right: 7rem;
+            color: white;
+            font-size: 1.5rem;
         }
 
         .log-btn-wrapper{
@@ -88,6 +96,7 @@ button{
             right: 1rem;
             width: 5rem;
             height: 5rem;
+            z-index: 101;
 
             background-color: white;
             clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
@@ -140,8 +149,9 @@ button{
             .character-name{
                 position: absolute;
                 padding: 0.2rem;
-                top: -10%;
+                top: -17%;
                 left: 0.3rem;
+                font-size: 1.4rem;
             }
         }
 
@@ -159,13 +169,15 @@ button{
         #next-btn{
             position: absolute;
             height: 100%;
-            width: 70%;
+            width: 100%;
             top: 0;
             left: 0;
             opacity: 0;
             z-index: 100;
+            cursor: pointer;
         }
 
+        
 
     }
 }
@@ -391,6 +403,7 @@ button{
                     margin-left: 2rem;
                     width: 80%;
                     word-break: break-all;
+                    color: #0d520d;
                 }
 
                 img{
@@ -477,7 +490,7 @@ button{
     top: 0;
     left: 0;
     background-color: rgb(177, 174, 174);
-    opacity: 0.9;
+    opacity: 0.97;
     color: white;
 
     .chat-log{
@@ -492,7 +505,10 @@ button{
             font-size: 1.7rem;
             .words-log{
                 margin-left: 1.2rem;
-                
+                color: #333333;
+            }
+            .chara-log{
+                color: #d41313;
             }
             margin-bottom: 3rem;
         }

@@ -18,7 +18,6 @@ let nowJson;
 
 //次のセリフを表示させるための関数
 function wordShow(thisJson){
-    console.log(thisJson);
     wordsNum++;
     //一番最初のセリフを表示
     let word_info = jsonWord[chapter][wordsNum];
@@ -32,10 +31,6 @@ function wordShow(thisJson){
         $(".character-name").text(word);
         $(".words").text(showWordInfo[word]);
 
-        /*ばっしーへ、上のwordが現在のキャラ名、word_info[word]がそのキャラのセリフになってます。
-        *セリフをログに追加するプログラムはこの辺に作った方がやりやすいかも？
-        */
-
         $(".chat-log").append(`<li><span class="chara-log">${word}:</span><span class="words-log">${showWordInfo[word]}</span></li>`)
 
         const chatLog = document.querySelector(".chat-log");
@@ -47,6 +42,7 @@ function wordShow(thisJson){
 
         if(word == "SYSTEM"){
             $("#next-btn").prop("disabled", true);
+            $("#next-show").css({visibility: "hidden"});
         }
 
 
@@ -71,8 +67,15 @@ function wordShow(thisJson){
         
         if("focus" in showWordInfo){
             $(`.character-img-wrapper .one-character:nth-child(${ showWordInfo.focus + 1})`).css({
-                transform: "translateY(-40px)",
-                filter: "contrast(0.2)",
+                transform: "translateY(-40px)"
+            })
+
+            $(".character-img-wrapper .one-character").each((i, n) => {
+                if(i != showWordInfo.focus){
+                    $(n).css({
+                        filter: "brightness(30%)"
+                    })
+                }
             })
         }
     }
@@ -123,6 +126,7 @@ $(window).on("load", function(){
                 nowJson = jsonWord[chapter];
                 wordShow(nowJson);
                 $("#next-btn").prop("disabled", false);
+                $("#next-show").css({visibility: "visible"});
             }
 
             //それ以外は次のブランチに切り替えるフラグ(番号がブランチの番号に対応している)
@@ -139,6 +143,7 @@ $(window).on("load", function(){
                 nowJson = nowJson[nowJson.length - 1]["Branches"][data.nextOK - 1];
                 wordShow(nowJson);
                 $("#next-btn").prop("disabled", false);
+                $("#next-show").css({visibility: "visible"});
             }
         }
         //通常のチャット

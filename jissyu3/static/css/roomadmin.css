@@ -13,20 +13,18 @@ button {
 }
 
 body {
-  background: #020024;
-  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(16%, #0a471f), color-stop(38%, #0b982a), color-stop(60%, #0b9a2a), color-stop(82%, #0a471f), to(#020024));
-  background: linear-gradient(90deg, #020024 0%, #0a471f 16%, #0b982a 38%, #0b9a2a 60%, #0a471f 82%, #020024 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(10, 71, 31) 16%, rgb(11, 152, 42) 38%, rgb(11, 154, 42) 60%, rgb(10, 71, 31) 82%, rgb(2, 0, 36) 100%);
 }
 
 header {
   width: 100%;
   padding: 0.5rem;
-  background-color: #0b4609;
+  background-color: rgb(11, 70, 9);
   opacity: 0.8;
   position: fixed;
   z-index: 100;
 }
-
 header h1 {
   margin-left: 0.8rem;
   font-family: kozuka-gothic-pr6n, sans-serif;
@@ -36,61 +34,48 @@ main {
   margin-top: 6rem;
   text-align: center;
 }
-
 main h2 {
   font-size: 2rem;
 }
-
 main ul {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
 main ul li {
   width: 40%;
   height: 5rem;
-  background-color: #105b0c;
+  background-color: rgb(16, 91, 12);
   -webkit-clip-path: polygon(5% 0, 95% 0, 100% 16%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
           clip-path: polygon(5% 0, 95% 0, 100% 16%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
   position: relative;
   margin: 1rem 1.5rem;
 }
-
 main ul li .permit {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 95%;
   height: 94%;
-  background-color: #8cd488;
+  background-color: rgb(140, 212, 136);
   -webkit-clip-path: polygon(5% 0, 95% 0, 100% 16%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
           clip-path: polygon(5% 0, 95% 0, 100% 16%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
   font-size: 2.1rem;
   z-index: 2;
 }
-
 main ul li .reject {
   position: absolute;
   z-index: 3;
   top: 50%;
   right: 10%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   overflow: visible;
   width: 10%;
   height: 50%;
 }
-
 main ul li .reject::before {
   content: "";
   position: absolute;
@@ -99,12 +84,9 @@ main ul li .reject::before {
   background-color: red;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-          transform: translate(-50%, -50%) rotate(-45deg);
-  -webkit-transition: all 0.3s;
+  transform: translate(-50%, -50%) rotate(-45deg);
   transition: all 0.3s;
 }
-
 main ul li .reject::after {
   content: "";
   position: absolute;
@@ -113,20 +95,14 @@ main ul li .reject::after {
   background-color: red;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) rotate(45deg);
-          transform: translate(-50%, -50%) rotate(45deg);
-  -webkit-transition: all 0.3s;
+  transform: translate(-50%, -50%) rotate(45deg);
   transition: all 0.3s;
 }
-
 main ul li .reject:hover::after {
-  -webkit-transform: translate(-50%, -50%) rotate(315deg);
-          transform: translate(-50%, -50%) rotate(315deg);
+  transform: translate(-50%, -50%) rotate(315deg);
 }
-
 main ul li .reject:hover::before {
-  -webkit-transform: translate(-50%, -50%) rotate(225deg);
-          transform: translate(-50%, -50%) rotate(225deg);
+  transform: translate(-50%, -50%) rotate(225deg);
 }
 
 footer {
@@ -134,10 +110,9 @@ footer {
   bottom: 1px;
   right: 1px;
 }
-
 footer button {
-  background-color: #3f3838;
-  color: #b82929;
+  background-color: rgb(63, 56, 56);
+  color: rgb(184, 41, 41);
   font-size: 1.5rem;
   margin-right: 0.3rem;
   margin-bottom: 0.3rem;
@@ -145,5 +120,4 @@ footer button {
   padding-right: 0.5rem;
   border-radius: 3px;
   border: solid 1px grey;
-}
-/*# sourceMappingURL=roomadmin.css.map */
+}/*# sourceMappingURL=roomadmin.css.map */

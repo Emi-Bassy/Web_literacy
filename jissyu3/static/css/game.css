@@ -20,21 +20,18 @@ button {
   width: 15%;
   height: 10%;
   font-size: 1.5rem;
-  background-color: #e6e5e5;
+  background-color: rgb(230, 229, 229);
   -webkit-clip-path: polygon(15% 0, 85% 0, 100% 30%, 100% 70%, 85% 100%, 15% 100%, 0% 70%, 0% 30%);
           clip-path: polygon(15% 0, 85% 0, 100% 30%, 100% 70%, 85% 100%, 15% 100%, 0% 70%, 0% 30%);
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 .exit #exit-btn:hover {
-  background-color: #c2bfbf;
+  background-color: rgb(194, 191, 191);
 }
 
 .scene-content .bg-img-wrapper {
   overflow: hidden;
 }
-
 .scene-content .bg-img-wrapper #background-img {
   position: fixed;
   width: 100vw;
@@ -45,119 +42,107 @@ button {
   left: 0;
   z-index: -2;
 }
-
 .scene-content .character-img-wrapper {
   overflow: hidden;
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
   z-index: -1;
 }
-
 .scene-content .character-img-wrapper .one-character {
   width: 20%;
   height: 84%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-
 .scene-content .speech {
   position: absolute;
   overflow: visible;
   width: 90%;
   height: 20%;
-  background-color: #090946;
+  background-color: rgb(9, 9, 70);
   bottom: 2%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   color: white;
   z-index: 10;
 }
-
 .scene-content .speech .words {
   width: 81%;
   padding: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
-
+.scene-content .speech #next-show {
+  position: absolute;
+  bottom: 1rem;
+  right: 7rem;
+  color: white;
+  font-size: 1.5rem;
+}
 .scene-content .speech .log-btn-wrapper {
   position: absolute;
   top: 1rem;
   right: 1rem;
   width: 5rem;
   height: 5rem;
+  z-index: 101;
   background-color: white;
   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
-
 .scene-content .speech .log-btn-wrapper #log-btn {
   position: absolute;
   width: 95%;
   height: 95%;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 1.2rem;
-  background-color: #090946;
+  background-color: rgb(9, 9, 70);
   color: white;
   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 .scene-content .speech .log-btn-wrapper #log-btn:hover {
   background-color: white;
-  color: #090946;
+  color: rgb(9, 9, 70);
 }
-
 .scene-content .speech #next-chapter {
   position: absolute;
   top: 50%;
   right: 20%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 4.8rem;
   height: 4.8rem;
   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   background-color: white;
-  color: #090946;
+  color: rgb(9, 9, 70);
   font-size: 1.1rem;
   display: none;
 }
-
 .scene-content .speech .character-wrapper {
   position: absolute;
   width: 99%;
   height: 25%;
   top: -25%;
   z-index: 9;
-  background-color: #1b90e4;
+  background-color: rgb(27, 144, 228);
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
           clip-path: polygon(0 0, 0% 100%, 100% 100%);
   left: 1%;
 }
-
 .scene-content .speech .character-wrapper .character-name {
   position: absolute;
   padding: 0.2rem;
-  top: -10%;
+  top: -17%;
   left: 0.3rem;
+  font-size: 1.4rem;
 }
-
 .scene-content .speech .outdesign {
   position: absolute;
   width: 98%;
@@ -165,19 +150,19 @@ button {
   top: -40%;
   left: 2%;
   z-index: 8;
-  background-color: #9be3f7;
+  background-color: rgb(155, 227, 247);
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
           clip-path: polygon(0 0, 0% 100%, 100% 100%);
 }
-
 .scene-content .speech #next-btn {
   position: absolute;
   height: 100%;
-  width: 70%;
+  width: 100%;
   top: 0;
   left: 0;
   opacity: 0;
   z-index: 100;
+  cursor: pointer;
 }
 
 .chat-content {
@@ -185,24 +170,20 @@ button {
   width: 60%;
   height: 90%;
   z-index: 101;
-  background-color: #516714;
+  background-color: rgb(81, 103, 20);
   top: 50%;
   right: -50%;
-  -webkit-transform: translate(17%, -50%);
-          transform: translate(17%, -50%);
+  transform: translate(17%, -50%);
   color: white;
   overflow: visible;
   border-radius: 10px;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 .chat-content .arrow-btn {
   position: absolute;
   top: 50%;
   left: -7%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   height: 30%;
   width: 7%;
   background-color: lightgray;
@@ -211,69 +192,57 @@ button {
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
           clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
 }
-
 .chat-content .arrow-btn:hover {
-  background-color: #9e9e9e;
+  background-color: rgb(158, 158, 158);
 }
-
 .chat-content .arrow-btn:hover::after {
-  background-color: #9e9e9e;
+  background-color: rgb(158, 158, 158);
 }
-
 .chat-content .arrow-btn::before {
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 85%;
   height: 80%;
-  background-color: #efebeb;
+  background-color: rgb(239, 235, 235);
   -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
           clip-path: polygon(100% 0, 0 50%, 100% 100%);
   z-index: 10;
 }
-
 .chat-content .arrow-btn::after {
   content: "";
   position: absolute;
   height: 100%;
   width: 10%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   background-color: lightgray;
   z-index: 11;
 }
-
 .chat-content.active {
   right: 10%;
 }
-
 .chat-content.active .arrow-btn::before {
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
           clip-path: polygon(0 0, 0% 100%, 100% 50%);
 }
-
 .chat-content .chat-content-inner {
   position: absolute;
   width: 95%;
   height: 85%;
   left: 50%;
   bottom: 2%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background-color: #c3ddc3;
+  transform: translateX(-50%);
+  background-color: rgb(195, 221, 195);
   border-radius: 10px;
 }
-
 .chat-content .chat-content-inner .chat-side #chat-text {
   position: absolute;
   bottom: 1%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 70%;
   height: 10%;
   border: none;
@@ -282,17 +251,14 @@ button {
   font-size: 1.3rem;
   padding-left: 1rem;
 }
-
-.chat-content .chat-content-inner .chat-side #chat-text::-webkit-input-placeholder {
+.chat-content .chat-content-inner .chat-side #chat-text::-moz-placeholder {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   margin-left: 1rem;
   font-size: 1.5rem;
   opacity: 0.6;
 }
-
 .chat-content .chat-content-inner .chat-side #chat-text:-ms-input-placeholder {
   position: absolute;
   top: 50%;
@@ -301,8 +267,7 @@ button {
   font-size: 1.5rem;
   opacity: 0.6;
 }
-
-.chat-content .chat-content-inner .chat-side #chat-text::-ms-input-placeholder {
+.chat-content .chat-content-inner .chat-side #chat-text::placeholder {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -310,17 +275,6 @@ button {
   font-size: 1.5rem;
   opacity: 0.6;
 }
-
-.chat-content .chat-content-inner .chat-side #chat-text::placeholder {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  margin-left: 1rem;
-  font-size: 1.5rem;
-  opacity: 0.6;
-}
-
 .chat-content .chat-content-inner .chat-side #chat-btn {
   position: absolute;
   bottom: 1%;
@@ -329,41 +283,31 @@ button {
   width: 5%;
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
           clip-path: polygon(0 0, 0% 100%, 100% 50%);
-  background-color: #1f951f;
-  -webkit-transition: all 0.3s ease;
+  background-color: rgb(31, 149, 31);
   transition: all 0.3s ease;
 }
-
 .chat-content .chat-content-inner .chat-side #chat-btn:hover {
-  background-color: #236323;
+  background-color: rgb(35, 99, 35);
 }
-
 .chat-content .chat-content-inner .confirm-side {
   position: absolute;
   width: 95%;
   height: 95%;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
-
 .chat-content .chat-content-inner .confirm-side p {
   font-size: 2rem;
   margin-top: 10%;
   margin-bottom: 10%;
 }
-
 .chat-content .chat-content-inner .confirm-side .admin-btns-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   height: 30%;
 }
-
 .chat-content .chat-content-inner .confirm-side .admin-btns-wrapper button {
   position: relative;
   width: 40%;
@@ -374,104 +318,82 @@ button {
           clip-path: polygon(6% 0, 94% 0, 100% 15%, 100% 85%, 94% 100%, 6% 100%, 0 85%, 0 15%);
   background-color: white;
 }
-
 .chat-content .chat-content-inner .confirm-side .admin-btns-wrapper .btn-ok-no-inner {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 98%;
   height: 93%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   -webkit-clip-path: polygon(6% 0, 94% 0, 100% 15%, 100% 85%, 94% 100%, 6% 100%, 0 85%, 0 15%);
           clip-path: polygon(6% 0, 94% 0, 100% 15%, 100% 85%, 94% 100%, 6% 100%, 0 85%, 0 15%);
 }
-
 .chat-content .chat-content-inner .confirm-side .admin-btns-wrapper #next-chapter-ok .btn-ok-no-inner {
-  background-color: #369bda;
-  -webkit-transition: all 0.3s ease;
+  background-color: rgb(54, 155, 218);
   transition: all 0.3s ease;
 }
-
 .chat-content .chat-content-inner .confirm-side .admin-btns-wrapper #next-chapter-ok .btn-ok-no-inner p {
   position: absolute;
   left: 50%;
-  -webkit-transform: translate(-50%, -35%);
-          transform: translate(-50%, -35%);
+  transform: translate(-50%, -35%);
 }
-
 .chat-content .chat-content-inner .confirm-side .admin-btns-wrapper #next-chapter-ok .btn-ok-no-inner:hover {
-  background-color: #408cbb;
+  background-color: rgb(64, 140, 187);
 }
-
 .chat-content .chat-content-inner .confirm-side .admin-btns-wrapper #next-chapter-no .btn-ok-no-inner {
-  background-color: #e52517;
-  -webkit-transition: all 0.3s ease;
+  background-color: rgb(229, 37, 23);
   transition: all 0.3s ease;
 }
-
 .chat-content .chat-content-inner .confirm-side .admin-btns-wrapper #next-chapter-no .btn-ok-no-inner p {
   position: absolute;
   left: 50%;
-  -webkit-transform: translate(-50%, -35%);
-          transform: translate(-50%, -35%);
+  transform: translate(-50%, -35%);
 }
-
 .chat-content .chat-content-inner .confirm-side .admin-btns-wrapper #next-chapter-no .btn-ok-no-inner:hover {
-  background-color: #be352b;
+  background-color: rgb(190, 53, 43);
 }
-
 .chat-content .chat-content-inner .chat {
   position: absolute;
   height: 80%;
   width: 90%;
   top: 5%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   overflow-y: scroll;
 }
-
 .chat-content .chat-content-inner .chat::-webkit-scrollbar {
   width: 8px;
 }
-
 .chat-content .chat-content-inner .chat::-webkit-scrollbar-track {
   opacity: 0;
 }
-
 .chat-content .chat-content-inner .chat::-webkit-scrollbar-thumb {
   border-radius: 25vh;
-  background-color: #ababab;
+  background-color: rgb(171, 171, 171);
 }
-
 .chat-content .chat-content-inner .chat::-webkit-scrollbar-thumb:hover {
   background-color: grey;
 }
-
 .chat-content .chat-content-inner .chat li {
   position: relative;
   overflow: visible;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-
 .chat-content .chat-content-inner .chat li img, .chat-content .chat-content-inner .chat li p {
   display: inline-block;
 }
-
 .chat-content .chat-content-inner .chat li p {
   font-size: 2rem;
   margin-left: 2rem;
   width: 80%;
   word-break: break-all;
+  color: #0d520d;
 }
-
 .chat-content .chat-content-inner .chat li img {
   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
-
 .chat-content .chat-content-inner .chat li::after {
   content: "";
   position: absolute;
@@ -481,13 +403,11 @@ button {
   bottom: -2%;
   background-color: white;
 }
-
 .chat-content h2 {
   font-size: 1.75rem;
   padding: 0.5rem;
   display: inline-block;
 }
-
 .chat-content #nextOk-btn {
   position: absolute;
   top: 1rem;
@@ -496,40 +416,32 @@ button {
   height: 2.6rem;
   background-color: white;
   border-radius: 10px 0px 10px 10px;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 .chat-content #nextOk-btn:hover {
-  background-color: #cecdcd;
+  background-color: rgb(206, 205, 205);
 }
-
 .chat-content #nextOk-btn:hover .nextOk-btn-inner {
-  background-color: #c3582a;
+  background-color: rgb(195, 88, 42);
 }
-
 .chat-content #nextOk-btn .nextOk-btn-inner {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  background-color: #df551b;
+  background-color: rgb(223, 85, 27);
   color: white;
 }
-
 .chat-content #nextOk-btn .nextOk-btn-inner p {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 1.3rem;
 }
-
 .chat-content #nextOk-btn::after {
   content: "";
   position: absolute;
@@ -550,29 +462,29 @@ button {
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: #b1aeae;
-  opacity: 0.9;
+  background-color: rgb(177, 174, 174);
+  opacity: 0.97;
   color: white;
 }
-
 .log .chat-log {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 80%;
   height: 80%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   overflow-y: scroll;
 }
-
 .log .chat-log li {
   font-size: 1.7rem;
   margin-bottom: 3rem;
 }
-
 .log .chat-log li .words-log {
   margin-left: 1.2rem;
+  color: #333333;
+}
+.log .chat-log li .chara-log {
+  color: #d41313;
 }
 
 h1 {
@@ -585,5 +497,4 @@ h1 {
   margin-top: 1.5rem;
   margin-left: 2rem;
   font-size: 1.8rem;
-}
-/*# sourceMappingURL=game.css.map */
+}/*# sourceMappingURL=game.css.map */

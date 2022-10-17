@@ -12,3 +12,11 @@ btn.addEventListener("click", function(){
 
     window.location = `${window.location.origin}/room/${room}`;
 });
+
+let roomInput = document.querySelector("#roomname");
+
+roomInput.addEventListener("keyup", (e) =>{
+    if(e.which == 13){
+        btn.click();
+    }
+})
