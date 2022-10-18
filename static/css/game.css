@@ -29,6 +29,39 @@ button {
   background-color: rgb(194, 191, 191);
 }
 
+.progress {
+  position: fixed;
+  background-color: #bad2f3;
+  -webkit-clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+          clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+  width: 15%;
+  height: 8%;
+  top: 14%;
+  right: 2%;
+}
+.progress .prog-inner {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 80%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: rgb(73, 75, 78);
+  overflow: visible;
+}
+.progress .prog-inner .prog-text {
+  display: inline;
+}
+.progress .prog-inner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.05rem;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(87, 148, 233);
+}
+
 .scene-content .bg-img-wrapper {
   overflow: hidden;
 }
