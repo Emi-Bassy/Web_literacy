@@ -216,7 +216,7 @@ $(window).on("load", function(){
                 const branches = wordsNum;
                 
                 if(branches != nowJson.length - 2){
-                    for(let i = 0; i < (nowJson.length - 2) - branches; i++){
+                    for(let i = 0; i < (nowJson.length - 1) - branches; i++){
                         $("#next-btn").click();
                     }
                 }
