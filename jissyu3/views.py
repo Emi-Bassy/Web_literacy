@@ -83,7 +83,7 @@ def roomadmin(request):
 
 def login(request):
     if request.method == "POST":
-        if request.POST["password"] == "password":
+        if request.POST["password"] == "Jissyu3Practic5":
             request.session["logined"] = True
             return redirect("roomadmin")
         return render(request, "login.html")
