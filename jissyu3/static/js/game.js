@@ -3,6 +3,8 @@ let jsonWord;
 //現在何章か
 let chapter = 1;
 
+let chapterShow = 1;
+
 //現在何番目のセリフか
 let wordsNum = -1;
 
@@ -16,13 +18,21 @@ let chatSocket;
 //現在表示することができるJSON
 let nowJson;
 
+//セリフの進捗度を表すリスト群
+let converted = [];
+let newconverted;
+
+//進捗度
+let progress = 0;
+
+//現在表示することができるセリフ群の進捗群
+let nowProgress;
+
 //次のセリフを表示させるための関数
 function wordShow(thisJson){
     wordsNum++;
     //一番最初のセリフを表示
-    let word_info = jsonWord[chapter][wordsNum];
-
-    $("#chapterNum").text(`${chapter}章`);
+    $("#chapterNum").text(`${chapterShow}章`);
 
     let showWordInfo = thisJson[wordsNum];
 
@@ -84,6 +94,87 @@ function wordShow(thisJson){
     }
 }
 
+//現在の進捗度を更新する関数
+function progressShow(progresses){
+    progress += progresses[wordsNum];
+    $(".progress-persent").text(`${Math.round(progress * 10) / 10}%`);
+}
+
+//辞書が入り混ざってるセリフを進捗度で表すためリストだけに変換する関数
+function convertList(l){
+    //辞書の場合
+    if(!Array.isArray(l)){
+        if(typeof l == "number"){
+            return 1;
+        }
+
+        //選択肢の分岐
+        if("Branches" in l){
+            return convertList(l.Branches);
+        }
+        else{
+             //1章2章の分岐
+            let chapter_list = [];
+            for(let one in l){
+                if(Array.isArray(l[one]) && one != "characters"){
+                    chapter_list.push(convertList(l[one]));
+                }
+                else{
+                    return convertList(1);
+                }
+            }
+            converted.push(chapter_list);
+        }
+    }
+    //配列の場合
+    else{
+        let result_list = [];
+        for(let one of l){
+            result_list.push(convertList(one));
+        }
+        return result_list;
+    }
+}
+
+//リストに変換したものから1セリフずつの進捗度を決める関数
+function serif(topis, words, persent=100, frontis=false){
+    if((typeof words[words.length - 1]) == "object" && !frontis){
+        if (typeof words[words.length - 2] != "object"){
+            serif(false, words, persent / 2, true)
+            serif(false, words[words.length - 1], persent / 2)
+        }
+
+        else{
+            if(topis){
+                for(let i = 0; i < words.length; i++){
+                    serif(false, words[i], persent / words.length);
+                }
+            }
+            else{
+                for(let i = 0; i < words.length; i++){
+                    serif(false, words[i], persent);
+                }
+            }
+        }
+    }
+
+    else{
+        for(let i = 0; i < words.length; i++){
+            if(frontis){
+                if(words.length - 1 == i){
+                    break;
+                }
+                else{
+                    words[i] = persent / (words.length - 1)
+                }
+            }
+            else{
+                words[i] = persent / words.length
+            }
+        }
+    }
+     
+}
 
 $(window).on("load", function(){
     $.ajax({
@@ -93,7 +184,14 @@ $(window).on("load", function(){
         success: function(data){
             jsonWord = data;
             nowJson = jsonWord[1];
+            convertList(jsonWord);
+            newconverted = [...converted[0]];
+            serif(true, newconverted);
+            
+            nowProgress = newconverted[0];
+
             wordShow(jsonWord[1]);
+            progressShow(nowProgress);
         }
     })
 
@@ -105,7 +203,6 @@ $(window).on("load", function(){
     chatSocket.onmessage = function(e){
         const data = JSON.parse(e.data).res;
         if("nextOK" in data){
-            console.log(data.nextOK);
             //-2はゲーム終了フラグ(とんでもないスパゲッティコードだよ！楽しいね！)
             if(data.nextOK == -2){
                 window.location = window.location.origin;
@@ -114,17 +211,20 @@ $(window).on("load", function(){
             //-1は次の章へ切り替えるフラグ
             else if(data.nextOK == -1){
                 chapter++;
+                if(chapter % 2 != 0) chapterShow++;
 
                 const branches = wordsNum;
                 
                 if(branches != nowJson.length - 2){
-                    for(let i = 0; i < (nowJson.length - 2) - branches; i++){
+                    for(let i = 0; i < (nowJson.length - 1) - branches; i++){
                         $("#next-btn").click();
                     }
                 }
                 wordsNum = -1;
                 nowJson = jsonWord[chapter];
+                nowProgress = newconverted[chapter - 1];
                 wordShow(nowJson);
+                progressShow(nowProgress);
                 $("#next-btn").prop("disabled", false);
                 $("#next-show").css({visibility: "visible"});
             }
@@ -141,7 +241,9 @@ $(window).on("load", function(){
                 wordsNum = -1;
 
                 nowJson = nowJson[nowJson.length - 1]["Branches"][data.nextOK - 1];
+                nowProgress = nowProgress[nowProgress.length - 1][data.nextOK - 1];
                 wordShow(nowJson);
+                progressShow(nowProgress);
                 $("#next-btn").prop("disabled", false);
                 $("#next-show").css({visibility: "visible"});
             }
@@ -163,6 +265,7 @@ $(window).on("load", function(){
 //次のセリフを表示するボタンをクリックしたとき
 $(document).on("click", "#next-btn", function(){
     wordShow(nowJson);
+    progressShow(nowProgress);
 });
 
 

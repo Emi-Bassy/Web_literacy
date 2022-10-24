@@ -78,7 +78,7 @@
             "focus": 1
         },
         {
-             "加奈": "うん。すごく似合ってた。そういえばこの前、私が愛の誕生日にあげたジャケットあるじゃん？それと組み合わせてもイケるんじゃない？",
+             "加奈": "うん。すごく似合ってた～。そういえばこの前、私が愛ちゃんの誕生日にあげたジャケットあるじゃない？それと組み合わせてもイケるんじゃないかなぁ？",
             "characters": [ "/static/picture/josei_01_a.png", "/static/picture/josei_06_a.png", "/static/picture/josei_07_b.png"],
             "focus": 2
         },
@@ -88,17 +88,17 @@
             "focus": 0
         },
         {
-            "加奈": "絶対やってよ。",
+            "加奈": "うんうん、絶対だよ～。",
             "characters": [ "/static/picture/josei_01_a.png", "/static/picture/josei_06_a.png", "/static/picture/josei_07_b.png"],
             "focus": 2
         },
         {
-            "萌": "あとで写真見せてね。とゆうか加奈、よく愛の誕生日知ってたよね。３人で話すようになったの最近じゃん。",
+            "萌": "あとで写真見せてね。とゆうか加奈、よく愛の誕生日知ってたよね。３人で話すようになったの最近じゃない。",
             "characters": [ "/static/picture/josei_01_a.png", "/static/picture/josei_06_b.png", "/static/picture/josei_07_a.png"],
             "focus": 1
         },
         {
-            "加奈": "愛のインスタのプロフィールに書いてあった。",
+            "加奈": "あ、それは愛ちゃんのインスタのプロフィールに書いてあったんだよね。",
             "characters": [ "/static/picture/josei_01_a.png", "/static/picture/josei_06_a.png", "/static/picture/josei_07_b.png"],
             "focus": 2
         },
@@ -108,7 +108,7 @@
             "focus": 0
         },
         {
-            "加奈": "愛ってしょっちゅう服の画像投稿してるからね。すぐに愛の好みがわかったよ。",
+            "加奈": "愛ちゃんってしょっちゅう服の画像投稿してるからね。すぐに好みがわかったよ～。",
             "characters": [ "/static/picture/josei_01_a.png", "/static/picture/josei_06_a.png", "/static/picture/josei_07_b.png"],
             "focus": 2
         },
@@ -118,7 +118,7 @@
             "focus": 1
         },
         {
-            "加奈": "そういうことだから、さっき言った組み合わせも絶対に合うよ。断言します。",
+            "加奈": "そういうことだから、さっき言った組み合わせも絶対に合うよ。自信あるもん。",
             "characters": [ "/static/picture/josei_01_a.png", "/static/picture/josei_06_a.png", "/static/picture/josei_07_b.png"],
             "focus": 2
         },
@@ -133,7 +133,7 @@
             "focus": 2
         },
         {
-            "萌": "すごい自信。明日が楽しみになってきた。",
+            "萌": "すごい自信ね。明日が楽しみになってきた。",
             "characters": [ "/static/picture/josei_01_a.png", "/static/picture/josei_06_b.png", "/static/picture/josei_07_a.png"],
             "focus": 1
         },
@@ -203,7 +203,7 @@
             "img": "/static/picture/time1.png"
         },
         {
-            "加奈": "ほら、私の言ったとおり似合ってるじゃん（ドヤ）。",
+            "加奈": "ほらぁ、私の言ったとおり似合ってるでしょ（ドヤ）。",
             "img": "/static/picture/class_day.jpg",
             "characters": [ "/static/picture/josei_01_a.png", "/static/picture/josei_06_a.png", "/static/picture/josei_07_b.png"],
             "focus": 2
@@ -219,7 +219,7 @@
             "focus": 1
         },
         {
-            "加奈": "あるよ。ほら。そうだ、萌似合いそうなのも選んであげるから、萌のも見せて。",
+            "加奈": "あるよ、ほら。そうだ、萌にも似合いそうなの選んであげるから、萌のも見せて。",
             "characters": [ "/static/picture/josei_01_a.png", "/static/picture/josei_06_a.png", "/static/picture/josei_07_b.png"],
             "focus": 2
         },
@@ -274,7 +274,7 @@
             "focus": 0
         },
         {
-            "加奈": "さすが○○ブランドだよね。学生にはなかなか手が出せないね。",
+            "加奈": "さすが○○ブランドだよねぇ。学生にはなかなか手が出せないね。",
             "characters": [ "/static/picture/josei_01_a.png", "/static/picture/josei_06_a.png", "/static/picture/josei_07_b.png"],
             "focus": 2
         },
@@ -284,7 +284,7 @@
             "focus": 1
         },
         {
-            "加奈": "もう少し安ければ買えたんだけどね。今月買いすぎちゃったから。バイトしないと。",
+            "加奈": "もう少し安ければ買えたんだけどねぇ。今月買いすぎちゃったから。バイトしないと。",
             "characters": [ "/static/picture/josei_01_a.png", "/static/picture/josei_06_a.png", "/static/picture/josei_07_b.png"],
             "focus": 2
         },
@@ -304,7 +304,7 @@
             "focus": 0
         },
         {
-            "加奈": "全くその通りです。",
+            "加奈": "ほんとにその通りだよ～。",
             "characters": [ "/static/picture/josei_01_a.png", "/static/picture/josei_06_a.png", "/static/picture/josei_07_b.png"],
             "focus": 2
         },
@@ -361,7 +361,7 @@
                         "focus": 0
                     },
                     {
-                        "SYSTEM": "パスワードはどうしますか？",
+                        "SYSTEM": "パスワードを変えますか？",
                         "branch": true
                     },
                     {
@@ -421,7 +421,7 @@
                                     "focus": 0
                                 },
                                 {
-                                    "加奈": "私は普通に使えるけど。",
+                                    "加奈": "私は普通に使えるよ～。",
                                     "characters": ["/static/picture/josei_01_e.png", "/static/picture/josei_06_a.png", "/static/picture/josei_07_b.png"],
                                     "focus": 2
                                 },
@@ -436,7 +436,7 @@
                                     "focus": 0
                                 },
                                 {
-                                    "加奈": "あれ？愛、今日インスタの投稿した？",
+                                    "加奈": "あれ？愛ちゃん、今日インスタの投稿した？",
                                     "characters": ["/static/picture/josei_01_e.png", "/static/picture/josei_06_a.png", "/static/picture/josei_07_b.png"],
                                     "focus": 2
                                 },
@@ -446,12 +446,12 @@
                                     "focus": 0
                                 },
                                 {
-                                    "加奈": "でもさっき愛のアカウントで投稿があったんだけど。",
+                                    "加奈": "でもさっき愛ちゃんのアカウントで投稿があったんだけど。",
                                     "characters": ["/static/picture/josei_01_e.png", "/static/picture/josei_06_e.png", "/static/picture/josei_07_e.png"],
                                     "focus": 2
                                 },
                                 {
-                                    "愛": "嘘⁉",
+                                    "愛": " _/_/_/_/ 嘘！？ _/_/_/_/",
                                     "characters": ["/static/picture/josei_01_f.png", "/static/picture/josei_06_e.png", "/static/picture/josei_07_e.png"],
                                     "focus": 0
                                 },
@@ -461,7 +461,7 @@
                                     "focus": 1
                                 },
                                 {
-                                    "愛": "なんで勝手に動いてるの⁈",
+                                    "愛": " _/_/_/_/ なんで勝手に動いてるの！？ _/_/_/_/ ",
                                     "characters": ["/static/picture/josei_01_f.png", "/static/picture/josei_06_e.png", "/static/picture/josei_07_e.png"],
                                     "focus": 0
                                 },
@@ -496,7 +496,7 @@
                                     "focus": 0
                                 },
                                 {
-                                    "加奈": "さっき愛のアカウントで投稿があったって話したじゃん。その投稿って、○○ブランドの宣伝なんだけど、もしかしてこのサイトで買い物した。",
+                                    "加奈": "さっき愛ちゃんのアカウントで投稿があったって話したじゃん。その投稿って、○○ブランドの宣伝なんだけど、もしかしてこのサイトで買い物した？",
                                     "characters": ["/static/picture/josei_01_e.png", "/static/picture/josei_06_e.png", "/static/picture/josei_07_e.png"],
                                     "focus": 2
                                 },
@@ -516,7 +516,7 @@
                                     "focus": 0
                                 },
                                 {
-                                    "加奈": "たぶん愛、パスワードを誕生日にしてたか、使いまわしのどっちかしてるでしょ。",
+                                    "加奈": "たぶん愛ちゃん、パスワードを誕生日にしてたか、使いまわしのどっちかしてるでしょ。",
                                     "characters": ["/static/picture/josei_01_e.png", "/static/picture/josei_06_e.png", "/static/picture/josei_07_e.png"],
                                     "focus": 2
                                 },
@@ -526,7 +526,7 @@
                                     "focus": 0
                                 },
                                 {
-                                    "加奈": "まだログインできるサイトのパスワード今すぐ変えなさい。",
+                                    "加奈": "まだログインできるサイトのパスワード今すぐ変えてー！",
                                     "characters": ["/static/picture/josei_01_e.png", "/static/picture/josei_06_e.png", "/static/picture/josei_07_e.png"],
                                     "focus": 2
                                 },
@@ -541,7 +541,7 @@
                                     "focus": 1
                                 },
                                 {
-                                    "加奈": "あとは支払方法によるかな。クレジットカードとか使ったなら気にしなきゃいけない事あるけど。",
+                                    "加奈": "あとは支払方法によるかなぁ。クレジットカードとか使ったなら気にしなきゃいけない事あるけど。",
                                     "characters": ["/static/picture/josei_01_e.png", "/static/picture/josei_06_e.png", "/static/picture/josei_07_e.png"],
                                     "focus": 2
                                 },
@@ -556,7 +556,7 @@
                                     "focus": 0
                                 },
                                 {
-                                    "加奈": "じゃあちゃんとお父さんにもこのこと話なさい。",
+                                    "加奈": "じゃあちゃんとお父さんにもこのこと話さないとだよ！",
                                     "characters": ["/static/picture/josei_01_e.png", "/static/picture/josei_06_e.png", "/static/picture/josei_07_e.png"],
                                     "focus": 2
                                 },
@@ -566,7 +566,7 @@
                                     "focus": 0
                                 },
                                 {
-                                    "SYSTEM": "BAD① END",
+                                    "SYSTEM": "THE WORST END -最悪の結末にたどり着いたようだ……-",
                                     "end": true
                                 }
                             ],
@@ -610,7 +610,7 @@
                                     "focus": 0
                                 },
                                 {
-                                    "加奈": "めっちゃいいじゃん！似合ってるよー。",
+                                    "加奈": "めっちゃいいじゃん！似合ってるよ～。",
                                     "characters": ["/static/picture/josei_01_a.png", "/static/picture/josei_06_a.png", "/static/picture/josei_07_b.png"],
                                     "focus": 2
                                 },
@@ -665,7 +665,7 @@
                                     "focus": 2
                                 },
                                 {
-                                    "愛": "嘘⁈それじゃあ偽物を買っちゃったの？！どうしよう。",
+                                    "愛": " _/_/_/_/ 嘘⁈それじゃあ偽物を買っちゃったの？！どうしよう。_/_/_/_/ ",
                                     "characters": ["/static/picture/josei_01_e.png", "/static/picture/josei_06_e.png", "/static/picture/josei_07_e.png"],
                                     "focus": 0
                                 },
@@ -690,7 +690,7 @@
                                     "focus": 0
                                 },
                                 {
-                                    "SYSTEM": "BAD② END",
+                                    "SYSTEM": "BAD END -最悪の結末は免れた……-",
                                     "end": true
                                 }
                             ]
@@ -852,7 +852,7 @@
                                     "focus": 0
                                 },
                                 {
-                                    "SYSTEM": "NOMAL END",
+                                    "SYSTEM": "NOMAL END -なんとか事態を回避したようだが……-",
                                     "end": true
                                 }
                             ],
@@ -896,7 +896,7 @@
                                     "focus": 0
                                 },
                                 {
-                                    "加奈": "めっちゃいいじゃん！似合ってるよー。",
+                                    "加奈": "めっちゃいいじゃん！似合ってるよ～。",
                                     "characters": ["/static/picture/josei_01_a.png", "/static/picture/josei_06_a.png", "/static/picture/josei_07_b.png"],
                                     "focus": 2
                                 },
@@ -911,7 +911,7 @@
                                     "focus": 0
                                 },
                                 {
-                                    "加奈": "やったね！やっぱりブランド品は憧れだよねー。",
+                                    "加奈": "やったね！やっぱりブランド品は憧れだよね～。",
                                     "characters": ["/static/picture/josei_01_a.png", "/static/picture/josei_06_a.png", "/static/picture/josei_07_b.png"],
                                     "focus": 2
                                 },
@@ -921,7 +921,7 @@
                                     "focus": 0
                                 },
                                 {
-                                    "萌": "またバイト頑張ればいいじゃん。大丈夫！今度さ一緒にウインドウショッピング行かない？",
+                                    "萌": "大丈夫！またバイト頑張ればいいじゃん。今度さ一緒にウインドウショッピング行かない？",
                                     "characters": ["/static/picture/josei_01_a.png", "/static/picture/josei_06_b.png", "/static/picture/josei_07_a.png"],
                                     "focus": 1
                                 },
@@ -936,7 +936,7 @@
                                     "focus": 0
                                 },
                                 {
-                                    "SYSTEM": "TRUE END",
+                                    "SYSTEM": "TRUE END -見事に事態を回避した-",
                                     "end": true
                                 }
                             ]
@@ -980,7 +980,7 @@
             "focus": 0
         },
         {
-            "下っ端A": "はい、ブランドものに興味のありそうで、大した対策もせずに自分の写真を載せている奴らを選びました。",
+            "下っ端A": "はい、ブランドものに興味のありそうで、≫≫≫大した対策もせずに自分の写真を載せている奴らを選びました。≪≪≪",
             "characters": [ "/static/picture/man1.png", "/static/picture/man4.png"],
             "focus": 1
         },
@@ -1022,7 +1022,7 @@
                         "focus": 1
                     },
                     {
-                        "リーダー": "そうか。ではB、入手した情報をまとめておけ。A、引っかかったやつらのメアド、パスワードを使って、他のサイトにログインできるか試しておけ。",
+                        "リーダー": "そうか。ではB、入手した情報をまとめておけ。A、引っかかったやつらの≫≫≫メアド、パスワードを使って、他のサイトにログインできるか試しておけ。≪≪≪",
                         "characters": [ "/static/picture/man1.png", "/static/picture/man4.png"],
                         "focus": 0
                     },
@@ -1032,7 +1032,7 @@
                         "focus": 1
                     },
                     {
-                        "リーダー": "よし。じゃあ乗っ取ったアカウントで偽サイトの宣伝をしておけ。閲覧者を増やしてどんどん釣るぞ。",
+                        "リーダー": "よし。じゃあ≫≫≫乗っ取ったアカウントで偽サイトの宣伝をしておけ。閲覧者を増やしてどんどん釣るぞ。≪≪≪",
                         "characters": [ "/static/picture/man1.png", "/static/picture/man4.png"],
                         "focus": 0
                     },
@@ -1053,7 +1053,7 @@
                         " ": "そして、犯人グループは偽サイト、SNSアカウントを削除、集めた個人情報は販売しどこかに消えた。"
                     },
                     {
-                        "SYSTEM": "END",
+                        "SYSTEM": "第一章 END",
                         "end": true
                     }
                 ],
@@ -1070,7 +1070,7 @@
                         "focus": 1
                     },
                     {
-                        "リーダー": "そうか。ではB、入手した情報をまとめておけ。A、引っかかったやつらのメアド、パスワードを使って、他のサイトにログインできるか試しておけ。",
+                        "リーダー": "そうか。ではB、入手した情報をまとめておけ。A、引っかかったやつらの≫≫≫メアド、パスワードを使って、他のサイトにログインできるか試しておけ。≪≪≪",
                         "characters": [ "/static/picture/man1.png", "/static/picture/man4.png"],
                         "focus": 0
                     },
@@ -1080,7 +1080,7 @@
                         "focus": 1
                     },
                     {
-                        "リーダー": "よし。じゃあ乗っ取ったアカウントで偽サイトの宣伝をしておけ。閲覧者を増やしてどんどん釣るぞ。",
+                        "リーダー": "よし。じゃあ≫≫≫乗っ取ったアカウントで偽サイトの宣伝をしておけ。閲覧者を増やしてどんどん釣るぞ。≪≪≪",
                         "characters": [ "/static/picture/man1.png", "/static/picture/man4.png"],
                         "focus": 0
                     },
@@ -1090,7 +1090,7 @@
                         "focus": 0
                     },
                     {
-                        "下っ端B": "ええ、一部の連中は誕生日とかの単純な情報ではないパスワードを使用していたらしく中々乗っ取れなかったです",
+                        "下っ端B": "ええ、一部の連中は≫≫≫誕生日とかの単純な情報ではないパスワードを使用していたらしく中々乗っ取れなかったです。≪≪≪",
                         "characters": [ "/static/picture/man1.png", "/static/picture/man4.png"],
                         "focus": 1
                     },
@@ -1111,7 +1111,7 @@
                         " ": "そして、犯人グループは偽サイト、SNSアカウントを削除、集めた個人情報は販売しどこかに消えた。"
                     },
                     {
-                        "SYSTEM": "END",
+                        "SYSTEM": "第一章 END",
                         "end": true
                     }
                 ]
@@ -1133,17 +1133,17 @@
             "focus": 0
         },
         {
-            "健太": "飯もうまかったし、風呂も広くて最高だよ。",
+            "健太": "ご飯も美味しかったし、お風呂も広くて最高だね",
             "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_b.png", "/static/picture/dansei_06_a.png"],
             "focus": 1
         },
         {
-            "秀樹": "そうだね。そういえばあっちにお土産屋あるらしいし見てこない？",
+            "秀樹": "そうですね。そういえばあっちにお土産屋あるらしいし見に行きません？",
             "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_b.png"],
             "focus": 2
         },
         {
-            "卓也": "いいな、行こうぜ。",
+            "卓也": "委員長なんで敬語なんだよ笑 いいな、行こうぜ。",
             "characters": ["/static/picture/dansei_01_b.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_a.png"],
             "focus": 0
         },
@@ -1152,7 +1152,7 @@
             "img": "/static/picture/ryokan_front.jpg"
         },
         {
-            "健太": "は～。買った買った。",
+            "健太": "いやぁ、たくさん買ったね。",
             "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_b.png", "/static/picture/dansei_06_a.png"],
             "focus": 1
         },
@@ -1162,24 +1162,24 @@
             "focus": 0
         },
         {
-            "健太": "少しは家族へのお土産",
+            "健太": "少しは家族へのお土産。",
             "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_b.png", "/static/picture/dansei_06_a.png"],
             "focus": 1
         },
         {
-            "秀樹": "少しだけかよ。",
+            "秀樹": "そこ少しだけなんですか。",
             "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_b.png"],
             "focus": 2
         },
         {
-            "健太": "これだけ買っといて家族には少なくない？",
+            "秀樹": "これだけ買っといて家族には少なくない？",
+            "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_b.png"],
+            "focus": 2
+        },
+        {
+            "健太": "いやいや、そんなことないって。",
             "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_b.png", "/static/picture/dansei_06_a.png"],
             "focus": 1
-        },
-        {
-            "秀樹": "いやいや、そんなことないって。",
-            "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_b.png"],
-            "focus": 2
         },
         {
             "卓也": "なあなあ二人とも、ここにすごそうな壺が並んでるぜ。",
@@ -1187,22 +1187,22 @@
             "focus": 0
         },
         {
-            "健太": "そうだな、さすがいい旅館だ。",
+            "健太": "そうだね、さすがいい旅館だなぁ。",
             "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_b.png", "/static/picture/dansei_06_a.png"],
             "focus": 1
         },
         {
-            "秀樹": "面白い模様だね。",
+            "秀樹": "とても興味深い模様ですね。",
             "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_b.png"],
             "focus": 2
         },
         {
-            "健太": "せっかくだし写真撮っとくか。",
+            "健太": "せっかくだし写真撮ろうか。",
             "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_b.png", "/static/picture/dansei_06_a.png"],
             "focus": 1
         },
         {
-            "卓也": "めちゃくちゃいいじゃん。記念にツイートしとこうぜ。",
+            "卓也": "めちゃくちゃいいじゃん。記念にツイートしとこうぜ！",
             "characters": ["/static/picture/dansei_01_b.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_a.png"],
             "focus": 0
         },
@@ -1211,7 +1211,7 @@
             "img": "/static/picture/twitter.png"
         },
         {
-            "健太": "どれどれって、ちょ。○○時代の1000万円ってなんだよ、",
+            "健太": "どれどれ～って、ちょっと。○○時代の1000万円ってどういうこと、",
             "img": "/static/picture/ryokan_front.jpg",
             "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_b.png", "/static/picture/dansei_06_a.png"],
             "focus": 1
@@ -1222,7 +1222,7 @@
             "focus": 0
         },
         {
-            "秀樹": "これ旅館の人に怒られない？",
+            "秀樹": "これ旅館の人に怒られるんじゃないですか？",
             "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_b.png"],
             "focus": 2
         },
@@ -1232,7 +1232,7 @@
             "focus": 0
         },
         {
-            "秀樹": "ホントに大丈夫かなぁ…。",
+            "秀樹": "ホントに大丈夫でしょうか…。",
             "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_b.png"],
             "focus": 2
         },
@@ -1252,7 +1252,7 @@
                         "branch-content": "投稿した"
                     },
                     {
-                        "秀樹": "え～。まぁ、そうだね。",
+                        "秀樹": "う～ん。まぁ、そうですね…。",
                         "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_b.png"],
                         "focus": 2
                     },
@@ -1272,7 +1272,7 @@
                         "focus": 0
                     },
                     {
-                        "秀樹": "それだともっと人数必要じゃない？",
+                        "秀樹": "それだともっと人数必要なのでは？",
                         "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_b.png"],
                         "focus": 2
                     },
@@ -1292,7 +1292,7 @@
                         "focus": 0
                     },
                     {
-                        "健太": "ああ。この前の修学旅行のツイートすごいバズってたぞ。",
+                        "健太": "ああ。この前の修学旅行のツイートすごいバズってたよ。",
                         "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_b.png", "/static/picture/dansei_06_a.png"],
                         "focus": 1
                     },
@@ -1302,12 +1302,12 @@
                         "focus": 0
                     },
                     {
-                        "秀樹": "ねえ、コメント見る限りだと結構信じちゃってる人いるけど？訂正した方がいいんじゃないの。",
+                        "秀樹": "ねえ、コメント見る限りだと結構信じちゃってる人いますよ？謝罪した方がいいんじゃないですか。",
                         "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_b.png"],
                         "focus": 2
                     },
                     {
-                        "SYSTEM": "投稿を訂正しますか？",
+                        "SYSTEM": "投稿を謝罪しますか？",
                         "branch": true
                     },
                     {
@@ -1317,7 +1317,7 @@
                                     "卓也": "大丈夫でしょ。写真載せただけだし。",
                                     "characters": ["/static/picture/dansei_01_b.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_b.png"],
                                     "focus": 0,
-                                    "branch-content": "訂正しない"
+                                    "branch-content": "謝罪しない"
                                 },
                                 {
                                     " ": "自室/朝",
@@ -1330,7 +1330,11 @@
                                     "focus": 0
                                 },
                                 {
-                                    " ": "教室/朝",
+                                    "同日": "教室/朝",
+                                    "img": "/static/picture/class_day.jpg"
+                                },
+                                {
+                                    "チャイム": "キーンコーンカーンコーン",
                                     "img": "/static/picture/class_day.jpg"
                                 },
                                 {
@@ -1339,7 +1343,7 @@
                                     "focus": 0
                                 },
                                 {
-                                    "健太": "卓也大丈夫か？なんかやばいことになってるぞ。",
+                                    "健太": "卓也大丈夫？なんかやばいことになってるよ。",
                                     "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_b.png", "/static/picture/dansei_06_a.png"],
                                     "focus": 1
                                 },
@@ -1349,17 +1353,17 @@
                                     "focus": 0
                                 },
                                 {
-                                    "秀樹": "もしかして気づいてない？卓也の個人情報がツイッターでさらされてるんだよ。",
+                                    "秀樹": "もしかして気づいてないんですか？卓也の個人情報がツイッターでさらされてるんですよ。",
                                     "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_b.png"],
                                     "focus": 2
                                 },
                                 {
-                                    "卓也": "嘘だろ！？",
+                                    "卓也": " _/_/_/_/ 嘘だろ！？ _/_/_/_/ ",
                                     "characters": ["/static/picture/dansei_01_b.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_a.png"],
                                     "focus": 0
                                 },
                                 {
-                                    "健太": "嘘じゃねーって、ほら。",
+                                    "健太": "嘘じゃないって、ほら。",
                                     "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_b.png", "/static/picture/dansei_06_a.png"],
                                     "focus": 1
                                 },
@@ -1444,7 +1448,7 @@
                                     "focus": 1
                                 },
                                 {
-                                    "卓也": "訴え⁈何でですか？",
+                                    "卓也": " _/_/_/_/ 訴え！？何でですか？ _/_/_/_/ ",
                                     "characters": ["/static/picture/dansei_01_e.png","/static/picture/dansei_09.png"],
                                     "focus": 0
                                 },
@@ -1504,19 +1508,19 @@
                                     "focus": 0
                                 },
                                 {
-                                    "SYSTEM": "BAD① END",
+                                    "SYSTEM": "The Worst Ending -最悪の結末にたどり着いたようだ……-",
                                     "end": true
                                 }
                             ],
                             [
                                 {
-                                    "卓也": "確かに…なんか怖いし一応訂正の投稿しておくわ。",
+                                    "卓也": "確かに…なんか怖いし一応謝罪の投稿しておくわ。",
                                     "characters": ["/static/picture/dansei_01_b.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_a.png"],
                                     "focus": 0,
-                                    "branch-content": "訂正する"
+                                    "branch-content": "謝罪する"
                                 },
                                 {
-                                    "秀樹": "うん。それがいいよ",
+                                    "秀樹": "うん。それがいいですよ",
                                     "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_b.png"],
                                     "focus": 2
                                 },
@@ -1540,7 +1544,7 @@
                                     "focus": 0
                                 },
                                 {
-                                    "健太": "卓也大丈夫か？なんかやばいことになってるぞ。",
+                                    "健太": "卓也大丈夫？なんかやばいことになってるよ。",
                                     "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_b.png", "/static/picture/dansei_06_a.png"],
                                     "focus": 1
                                 },
@@ -1550,17 +1554,17 @@
                                     "focus": 0
                                 },
                                 {
-                                    "秀樹": "もしかして気づいてない？卓也の個人情報がツイッターでさらされてるんだよ。",
+                                    "秀樹": "もしかして気づいてないんですか？卓也の個人情報がツイッターでさらされてるんですよ。",
                                     "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_b.png"],
                                     "focus": 2
                                 },
                                 {
-                                    "卓也": "嘘だろ！？",
+                                    "卓也": " _/_/_/_/ 嘘だろ！？ _/_/_/_/ ",
                                     "characters": ["/static/picture/dansei_01_b.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_a.png"],
                                     "focus": 0
                                 },
                                 {
-                                    "健太": "嘘じゃねーって、ほら。",
+                                    "健太": "嘘じゃないって、ほら。",
                                     "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_b.png", "/static/picture/dansei_06_a.png"],
                                     "focus": 1
                                 },
@@ -1625,12 +1629,12 @@
                                     "focus": 1
                                 },
                                 {
-                                    "卓也": "俺、どうしたらいいんでしょうか？一度バズったときツイート訂正したから...もう大丈夫かと思ってました...。",
+                                    "卓也": "俺、どうしたらいいんでしょうか？一度バズったときツイート謝罪したから...もう大丈夫かと思ってました...。",
                                     "characters": ["/static/picture/dansei_01_e.png","/static/picture/dansei_09.png"],
                                     "focus": 0
                                 },
                                 {
-                                    "教師": "一応訂正したのは救いの余地がある。ただしこの投稿内容自体は容認できるものじゃないぞ？修学旅行はあくまでも授業の一環だからな。",
+                                    "教師": "一応謝罪したのは救いの余地がある。ただしこの投稿内容自体は容認できるものじゃないぞ？修学旅行はあくまでも授業の一環だからな。",
                                     "characters": ["/static/picture/dansei_01_e.png","/static/picture/dansei_09.png"],
                                     "focus": 1
                                 },
@@ -1645,7 +1649,7 @@
                                     "focus": 1
                                 },
                                 {
-                                    "卓也": "え？！厳重注意だと学校推薦を取れなくなりますよね？",
+                                    "卓也": " _/_/_/_/ え？！厳重注意だと学校推薦を取れなくなりますよね？ _/_/_/_/ ",
                                     "characters": ["/static/picture/dansei_01_e.png","/static/picture/dansei_09.png"],
                                     "focus": 0
                                 },
@@ -1655,7 +1659,7 @@
                                     "focus": 1
                                 },
                                 {
-                                    "卓也": "え？だって炎上はしてますけどちゃんと訂正はしたし誰にも迷惑かけていないじゃないですか？",
+                                    "卓也": "え？だって炎上はしてますけどちゃんと謝罪はしたし誰にも迷惑かけていないじゃないですか？",
                                     "characters": ["/static/picture/dansei_01_e.png","/static/picture/dansei_09.png"],
                                     "focus": 0
                                 },
@@ -1695,7 +1699,7 @@
                                     "focus": 1
                                 },
                                 {
-                                    "教師": "今回は早めに情報が訂正されたから大事には至らなかったが、旅館に迷惑をかけた事実は変わらない。それが処分の理由だ。",
+                                    "教師": "今回は早めに情報が謝罪されたから大事には至らなかったが、旅館に迷惑をかけた事実は変わらない。それが処分の理由だ。",
                                     "characters": ["/static/picture/dansei_01_e.png","/static/picture/dansei_09.png"],
                                     "focus": 1
                                 },
@@ -1705,7 +1709,7 @@
                                     "focus": 0
                                 },
                                 {
-                                    "SYSTEM": "BAD② END",
+                                    "SYSTEM": "BAD END -最悪の結末は免れた……-",
                                     "end": true
                                 }
                             ]
@@ -1720,12 +1724,12 @@
                         "branch-content": "投稿しない"
                     },
                     {
-                        "秀樹": "それに、思い出なんて別にSNSに投稿しなくても内輪ネタでいいだろ",
+                        "秀樹": "それに、思い出なんて別にSNSに投稿しなくても内輪ネタでいいじゃないですか",
                         "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_b.png"],
                         "focus": 2
                     },
                     {
-                        "健太": "そうだな。仲良いメンツだけの方が話も盛り上がるだろうし？",
+                        "健太": "そうだね。仲良いメンツだけの方が話も盛り上がるだろうし？",
                         "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_b.png", "/static/picture/dansei_06_a.png"],
                         "focus": 1
                     },
@@ -1745,7 +1749,7 @@
                         "focus": 0
                     },
                     {
-                        "秀樹": "それだともっと人数必要じゃない？",
+                        "秀樹": "それだともっと人数必要じゃないですか？",
                         "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_b.png"],
                         "focus": 2
                     },
@@ -1765,32 +1769,32 @@
                         "focus": 0
                     },
                     {
-                        "秀樹": "たしかに授業始まるとか考えたくないわ笑 でもほんと楽しかったよな。",
+                        "健太": "たしかに授業始まるとか考えたくないね笑 でもほんと楽しかったよね。",
+                        "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_b.png", "/static/picture/dansei_06_a.png"],
+                        "focus": 1
+                    },
+                    {
+                        "秀樹": "特にみんなでやった人生ゲームとか最高でしたね。",
                         "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_b.png"],
                         "focus": 2
                     },
                     {
-                        "健太": "特にみんなでやった人狼ゲームとか最高だったよな。",
-                        "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_b.png", "/static/picture/dansei_06_a.png"],
-                        "focus": 1
-                    },
-                    {
-                        "卓也": "そうそう！夜中先生の見回りかわしながら遊ぶの楽しすぎだわ！",
+                        "卓也": "そうそう！夜中に先生の見回りかわしながら遊ぶの楽しすぎだわ！",
                         "characters": ["/static/picture/dansei_01_b.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_a.png"],
                         "focus": 0
                     },
                     {
-                        "健太": "なんかThe修学旅行って感じだったよな。一生忘れないわー。",
+                        "健太": "なんか、The修学旅行って感じだったよね。一生忘れないな～。",
                         "characters": ["/static/picture/dansei_01_a.png", "/static/picture/dansei_05_b.png", "/static/picture/dansei_06_a.png"],
                         "focus": 1
                     },
                     {
-                        "卓也": "一生とか重すぎ笑 でもSNSで知らない人たちに向けて投稿するよりもみんなと楽しい思い出作れたしよかったな。",
+                        "卓也": "一生とか重すぎ笑 でも知らない人達も見られるSNSで投稿するよりもみんなと楽しい思い出作れたしよかったな。",
                         "characters": ["/static/picture/dansei_01_b.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_a.png"],
                         "focus": 0
                     },
                     {
-                        "SYSTEM": "TRUE END",
+                        "SYSTEM": "TRUE END -見事に事態を回避した-",
                         "end": true
                     }
                 ]
@@ -1815,10 +1819,10 @@
                 [
                     {
                         "ー": "とあるSNS利用者Aは偶然主人公の投稿を発見",
-                        "branch-content": "投稿した+訂正しない"
+                        "branch-content": "投稿した+謝罪しない"
                     },
                     {
-                        "SNS利用者A": "あれ、このお皿って○○旅館にあったやつじゃん。こんな、価値があったんだ。みんなに教えてあげよう。",
+                        "SNS利用者A": "あれ、このお皿って○○旅館にあったやつじゃん。こんな、価値があったんだ。≫≫≫みんなに教えてあげよう。≪≪≪",
                         "characters": ["/static/picture/woman1.png","/static/picture/woman2.png"],
                         "focus": 0
                     },
@@ -1881,17 +1885,17 @@
                         "ー": "このツイートにより主人公が嘘をついたと広まり、複数のSNS利用者により主人公が責められる事になる。"
                     },
                     {
-                        "SYSTEM": "END",
+                        "SYSTEM": "第二章 END",
                         "end": true
                     }
                 ],
                 [
                     {
                         "ー": "とあるSNS利用者Aは偶然主人公の投稿を発見",
-                        "branch-content": "投稿した+訂正した"
+                        "branch-content": "投稿した+謝罪した"
                     },
                     {
-                        "SNS利用者A": "あれ、このお皿って○○旅館にあったやつじゃん。こんな、価値があったんだ。みんなに教えてあげよう。",
+                        "SNS利用者A": "あれ、このお皿って○○旅館にあったやつじゃん。こんな、価値があったんだ。≫≫≫みんなに教えてあげよう。≪≪≪",
                         "characters": ["/static/picture/woman1.png","/static/picture/woman2.png"],
                         "focus": 0
                     },
@@ -1942,17 +1946,17 @@
                         "ー": "旅館にクレームが殺到"
                     },
                     {
-                        "SNS利用者A": "あれ、この前の投稿嘘だったって訂正してる…。自分のアカウントで拡散しちゃったのにどうしよう。",
+                        "SNS利用者A": "あれ、この前の投稿嘘だったって謝罪してる…。自分のアカウントで拡散しちゃったのにどうしよう。",
                         "characters": ["/static/picture/woman1.png","/static/picture/woman2.png"],
                         "focus": 0
                     },
                     {
-                        "SNS利用者B": "でもAは引用して投稿しただけでしょ？別に自分が嘘ついたわけじゃないんだし気にしなければいいんじゃないの？",
+                        "SNS利用者B": "でもAは引用して投稿しただけでしょ？≫≫≫別に自分が嘘ついたわけじゃないんだし気にしなければいいんじゃないの？≪≪≪",
                         "characters": ["/static/picture/woman1.png","/static/picture/woman2.png"],
                         "focus": 1
                     },
                     {
-                        "SNS利用者A": "たしかにそれもそうだね。なんか元の投稿炎上してるけどそれは自業自得だよね。自分の投稿は削除しておけばいいや",
+                        "SNS利用者A": "たしかにそれもそうだね。≫≫≫なんか元の投稿炎上してるけどそれは自業自得だよね。自分の投稿は削除しておけばいいや≪≪≪",
                         "characters": ["/static/picture/woman1.png","/static/picture/woman2.png"],
                         "focus": 0
                     },
@@ -1960,7 +1964,7 @@
                         "ー": "Aのツイートも炎上の一端を担っていたが本人が削除したことにより、主人公のみが嘘をついたと広まり、複数のSNS利用者により主人公が責められる流れとなる。"
                     },
                     {
-                        "SYSTEM": "END",
+                        "SYSTEM": "第二章 END",
                         "end": true
                     }
                 ],
@@ -1980,12 +1984,12 @@
                         "focus": 1
                     },
                     {
-                        "SNS利用者A": "そうだ、楽しい思い出作らせてもらったしＳＮＳで他の人たちにも教えてあげよう。",
+                        "SNS利用者A": "そうだ、楽しい思い出作らせてもらったし≫≫≫ＳＮＳで他の人たちにも教えてあげよう。≪≪≪",
                         "characters": ["/static/picture/woman1.png","/static/picture/woman2.png"],
                         "focus": 0
                     },
                     {
-                        "SNS利用者B": "いいね。でも顔とか行った時期が分かるような内容は避けてよね？",
+                        "SNS利用者B": "いいね。でも≫≫≫顔とか行った時期が分かるような内容は避けてよね？≪≪≪",
                         "characters": ["/static/picture/woman1.png","/static/picture/woman2.png"],
                         "focus": 1
                     },
@@ -2000,7 +2004,7 @@
                         "focus": 1
                     },
                     {
-                        "SNS利用者A": "ほんとだよ笑。まああのお皿とかは泊まった時のお楽しみということで。",
+                        "SNS利用者A": "ほんとだよ笑 まあ、あのお皿とかは泊まった時のお楽しみということで。",
                         "characters": ["/static/picture/woman1.png","/static/picture/woman2.png"],
                         "focus": 0
                     },
@@ -2013,17 +2017,17 @@
                         "focus": 0
                     },
                     {
-                        "SNS利用者B": "そんなに上手くいくわけないでしょ笑。",
+                        "SNS利用者B": "そんなに上手くいくわけないでしょ笑",
                         "characters": ["/static/picture/woman1.png","/static/picture/woman2.png"],
                         "focus": 1
                     },
                     {
-                        "SNS利用者A": "確かに笑。さ、次の旅行の予定立てようよ！",
+                        "SNS利用者A": "確かに笑 さ、次の旅行の予定立てようよ！",
                         "characters": ["/static/picture/woman1.png","/static/picture/woman2.png"],
                         "focus": 0
                     },
                     {
-                        "SYSTEM": "END",
+                        "SYSTEM": "第二章 END",
                         "end": true
                     }
                 ]
@@ -2056,7 +2060,7 @@
             "img": "/static/picture/black1.png"
         },
         {
-            "解説者": "パスワードを使いまわしていると、万が一流出してしまった場合複数のサイトのアカウントを乗っ取られてしまいます。"
+            "解説者": "パスワードを使いまわしていると、万が一パスワードが流出してしまった場合複数のサイトのアカウントを乗っ取られてしまいます。"
         },
         {
             "解説者": "したがって、パスワードを使いまわすことは危険です。"
@@ -2095,7 +2099,7 @@
             "解説者": "まず、「http:」で始まっているサイトは通信が暗号化されておらず、セキュリティがしっかりしているとは言えません。そのため、盗聴や改ざんを行われてしまう危険性があります。"
         },
         {
-            "解説者": "ECサイトは個人情報のやり取りが行われ情報の保護が重要なはずなので、セキュリティに不安の残る「http:」を使用している場合偽サイトである可能性を考えた方がよいでしょう。"
+            "解説者": "ショッピングサイトは個人情報のやり取りが行われ情報の保護が重要なはずなので、セキュリティに不安の残る「http:」を使用している場合偽サイトである可能性を考えた方がよいでしょう。"
         },
         {
             "解説者": "ただし「https:」も絶対安全というわけではないので、不安な方はURLからアクセスせずに、公式のサイトにアクセスしてから商品検索を行うと良いでしょう。"
@@ -2105,7 +2109,7 @@
             "img": "/static/picture/black5.png"
         },
         {
-            "解説者": "特定商法取引法により、ECサイトは住所や電話番号などの運営者情報を記載しなければなりません。したがって、運営者情報が載っていないサイトは偽サイトであると考えられます。"
+            "解説者": "特定商法取引法により、ショッピングサイトは住所や電話番号などの運営者情報を記載しなければなりません。したがって、運営者情報が載っていないサイトは偽サイトであると考えられます。"
         },
         {
             "解説者": "また、運営者情報が記載されていても内容がでたらめである場合もあります。なので、初めて使うサイトであるのならば運営元を少し調べてみると良いでしょう。"
