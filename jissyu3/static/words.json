@@ -151,6 +151,10 @@
             "img": "/static/picture/load_night.jpg"
         },
         {
+            " ": " ",
+            "img": "/static/picture/living_night.jpg"
+        },
+        {
             " ": "自室/夜",
             "img": "/static/picture/roomR_night.jpg"
         },
@@ -199,12 +203,27 @@
             "focus": 0
         },
         {
+            " ": " ",
+            "img": "/static/picture/roomR_midnight.jpg"
+        },
+        {
+            " ": " ",
+            "img": "/static/picture/roomR_day.jpg"
+        },
+        {
+            " ": " ",
+            "img": "/static/picture/living_day.jpg"
+        },
+        {
+            " ": " ",
+            "img": "/static/picture/load_day.jpg"
+        },
+        {
             " ": "教室/昼休み",
-            "img": "/static/picture/time1.png"
+            "img": "/static/picture/class_day.jpg"
         },
         {
             "加奈": "ほらぁ、私の言ったとおり似合ってるでしょ（ドヤ）。",
-            "img": "/static/picture/class_day.jpg",
             "characters": [ "/static/picture/josei_01_a.png", "/static/picture/josei_06_a.png", "/static/picture/josei_07_b.png"],
             "focus": 2
         },
@@ -269,6 +288,10 @@
             "focus": 2
         },
         {
+            " ": " ",
+            "img": "/static/picture/net3.png"
+        },
+        {
             "愛": "どれどれ...うわたっか！！確かに合いそうだけどこれは買えないよ。",
             "characters": [ "/static/picture/josei_01_b.png", "/static/picture/josei_06_a.png", "/static/picture/josei_07_a.png"],
             "focus": 0
@@ -280,6 +303,7 @@
         },
         {
             "萌": "せっかく合うのにね～",
+            "img": "/static/picture/class_day.jpg",
             "characters": [ "/static/picture/josei_01_a.png", "/static/picture/josei_06_b.png", "/static/picture/josei_07_a.png"],
             "focus": 1
         },
@@ -330,6 +354,18 @@
         {
             " ": " ",
             "img": "/static/picture/load_night.jpg"
+        },
+        {
+            " ": " ",
+            "img": "/static/picture/living_night.jpg"
+        },
+        {
+            " ": " ",
+            "img": "/static/picture/roomR_night.jpg"
+        },
+        {
+            " ": " ",
+            "img": "/static/picture/roomR_midnight.jpg"
         },
         {
             " ": "自室/夜",
@@ -396,11 +432,16 @@
                                     "focus": 0
                                 },
                                 {
-                                    "翌々日": "自室/夕方",
-                                    "img": "/static/picture/roomR_afternoon.jpg"
+                                    " ": " ",
+                                    "img": "/static/picture/roomR_midnight.jpg"
+                                },
+                                {
+                                    " ": "自室/夕方",
+                                    "img": "/static/picture/time2.png"
                                 },
                                 {
                                     "愛": "今日もいい写真取れたから投稿しよっと。ってあれ？ログアウトしてる。まあ、またログインすればいいか。",
+                                    "img": "/static/picture/roomR_afternoon.jpg",
                                     "characters": [ "/static/picture/josei_01_a.png"],
                                     "focus": 0
                                 },
@@ -600,8 +641,12 @@
                                     "focus": 0
                                 },
                                 {
+                                    " ": " ",
+                                    "img": "/static/picture/roomR_midnight.jpg"
+                                },
+                                {
                                     " ": "教室/朝",
-                                    "img": "/static/picture/time1.png"
+                                    "img": "/static/picture/time2.png"
                                 },
                                 {
                                     "愛": "この前話してた洋服ついに届いたの！すっごくかわいいでしょ。",
@@ -699,34 +744,29 @@
                 ],
                 [
                     {
-                        "愛": "…ん？このサイトよく見たらhttpsじゃなくてhttpになってる…",
+                        "愛": "…ん？このサイトよく見たらURLが少し違う...？それにフォロワーも少なくない？",
                         "characters": [ "/static/picture/josei_01_b.png"],
                         "focus": 0,
                         "branch-content": "アクセスしない"
                     },
                     {
-                        "愛": "そういえばこの前授業で、httpは通信暗号化されてないから注意が必要とか言ってたような...？",
-                        "characters": [ "/static/picture/josei_01_b.png"],
-                        "focus": 0
-                    },
-                    {
-                        "愛": "お父さーん、このサイトhttpになってるんだけどアクセスしても大丈夫かな？",
+                        "愛": "お父さーん、このサイトURL少し違う気がするんだけどアクセスしても大丈夫かな？",
                         "img": "/static/picture/living_night.jpg",
                         "characters": [ "/static/picture/josei_01_b.png", "/static/picture/dansei_09.png"],
                         "focus": 0
                     },
                     {
-                        "父": "どれどれ。このサイトURLが違うじゃないか。",
+                        "父": "どれどれ。確かに違うな。",
                         "characters": [ "/static/picture/josei_01_a.png", "/static/picture/dansei_09.png"],
                         "focus": 1
                     },
                     {
-                        "愛": "？...どういうこと？",
+                        "愛": "やっぱり？",
                         "characters": [ "/static/picture/josei_01_b.png", "/static/picture/dansei_09.png"],
                         "focus": 0
                     },
                     {
-                        "父": "このサイトは偽物だってことだ。",
+                        "父": "ああ。このサイトは偽物だ。",
                         "characters": [ "/static/picture/josei_01_a.png", "/static/picture/dansei_09.png"],
                         "focus": 1
                     },
@@ -807,6 +847,10 @@
                                     "focus": 0
                                 },
                                 {
+                                    " ": " ",
+                                    "img": "/static/picture/roomR_midnight.jpg"
+                                },
+                                {
                                     " ": "自宅/夜",
                                     "img": "/static/picture/time2.png"
                                 },
@@ -884,6 +928,10 @@
                                     "img": "/static/picture/roomR_night.jpg",
                                     "characters": [ "/static/picture/josei_01_b.png"],
                                     "focus": 0
+                                },
+                                {
+                                    " ": " ",
+                                    "img": "/static/picture/roomR_midnight.jpg"
                                 },
                                 {
                                     " ": "教室/朝",
@@ -1286,7 +1334,17 @@
                         "img": "/static/picture/time2.png"
                     },
                     {
-                        "卓也": "あれ、なんかツイッターの通知がやけに多いな。",
+                        "卓也": "あれ？",
+                        "img": "/static/picture/class_day.jpg",
+                        "characters": ["/static/picture/dansei_01_b.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_a.png"],
+                        "focus": 0
+                    },
+                    {
+                        " ": " ",
+                        "img": "/static/picture/aikon.png"
+                    },
+                    {
+                        "卓也": "なんかツイッターの通知がやけに多いな。",
                         "img": "/static/picture/class_day.jpg",
                         "characters": ["/static/picture/dansei_01_b.png", "/static/picture/dansei_05_a.png", "/static/picture/dansei_06_a.png"],
                         "focus": 0
