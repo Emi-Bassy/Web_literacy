@@ -39,18 +39,22 @@ header{
 
 main{
     text-align: center;
-    h2{
-        font-size: 2.5rem;
+    .titles{
+        overflow: hidden;
+        h2{
+            font-size: 2.5rem;
+        }
+        img{
+            margin-top: -6rem;
+            width: 100%;
+        }
+        
+        .subtitle{
+            margin-top: -10rem;
+            font-size: 1.5rem;
+        }     
     }
-    img{
-        margin-top: -6rem;
-        width: 100%;
-    }
-    
-    .subtitle{
-        margin-top: -10rem;
-        font-size: 1.5rem;
-    }
+
 
     .down-arrow{
         display: inline-block;
