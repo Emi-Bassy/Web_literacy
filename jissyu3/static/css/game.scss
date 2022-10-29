@@ -48,9 +48,10 @@ button{
         left: 10%;
         width: 80%;
         transform: translateY(-50%);
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         color: rgb(73 75 78);
         overflow: visible;
+        white-space: nowrap;
 
         .prog-text{
             display: inline;
